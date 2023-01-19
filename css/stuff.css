@@ -235,6 +235,14 @@ kbd {
   color: #d32f2f;
 }
 
+.bg-dark {
+  background-color: #1B1B1D;
+}
+
+.bg-light {
+  background-color: #F5F6F7;
+}
+
 .container,
 .container-fluid {
   width: 80%;

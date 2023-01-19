@@ -1,5 +1,5 @@
 
-<h1 align="center">Stuff CSS</h1>
+<h1 align="center">Stuff CSS [BETA]</h1>
 
 <p align="center">
   Simple & Minimal Semantic UI
