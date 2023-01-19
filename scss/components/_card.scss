@@ -1,4 +1,16 @@
 .card {
-  display: flex;
-  justify-content: space-between;
+  margin: 3px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $light;
+
+  .card-header {
+    font-weight: bold;
+  }
+
+  .card-body {
+    background-color: $grey-400;
+  }
+
+  .card-footer {}
 }

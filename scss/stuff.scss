@@ -10,13 +10,14 @@
 @import "themes/theme";
 
 // Layout
-@import "layout/container"; // .container, .container-fluid
+@import "layout/container";
+@import "layout/grid";
 
 // Content
-@import "content/button"; // button, a[role=button], type=button, type=submit ...
+@import "content/button";
 
 // Components
-@import "components/card"; // article
-@import "components/nav"; // nav
+@import "components/card";
+@import "components/nav";
 
 // Utilities

@@ -279,6 +279,26 @@ kbd {
 }
 
 /**
+* Grid
+* Minimal grid system with auto-layout columns
+*/
+.grid {
+  grid-column-gap: var(--grid-spacing-horizontal);
+  grid-row-gap: var(--grid-spacing-vertical);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+  }
+}
+.grid > * {
+  min-width: 0;
+}
+
+/**
  * Button
  */
 button {
@@ -290,10 +310,17 @@ button {
 }
 
 .card {
-  display: flex;
-  justify-content: space-between;
+  margin: 3px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #F5F6F7;
 }
-
+.card .card-header {
+  font-weight: bold;
+}
+.card .card-body {
+  background-color: hsl(205deg, 12%, 59%);
+}
 nav {
   display: flex;
 }

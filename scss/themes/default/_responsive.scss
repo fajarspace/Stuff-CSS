@@ -1,0 +1,22 @@
+// Responsive
+
+// xs: Extra small (portrait phones)
+// sm: Small(landscape phones)
+// md: Medium(tablets)
+// lg: Large(desktops)
+// xl: Extra large (large desktops)
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  ) !default;
+
+// Viewports
+$viewports: (
+  sm: 510px,
+  md: 700px,
+  lg: 920px,
+  xl: 1130px) !default;
