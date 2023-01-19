@@ -1,6 +1,22 @@
 /**
  * Theme: default
  */
+.text-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-gray-100 {
+  color: hsl(205deg, 18%, 86%);
+}
+
+.text-gray-500 {
+  color: hsl(205deg, 10%, 50%);
+}
+
 :root {
   font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
@@ -12,7 +28,6 @@
 }
 
 a {
-  color: 195;
   text-decoration: none;
 }
 
@@ -34,7 +49,6 @@ h6 {
 }
 
 h1 {
-  color: #ffebee;
   font-size: 2em;
 }
 
@@ -85,4 +99,4 @@ kbd {
   font-weight: bolder;
 }
 
-/*# sourceMappingURL=default.css.map */
+/*# sourceMappingURL=theme.css.map */
