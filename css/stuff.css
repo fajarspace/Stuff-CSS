@@ -5,14 +5,12 @@
 /**
  * Theme: default
  */
-:root {
+* {
   font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px;
-  border-radius: 0.25rem;
-  border-width: 1px;
-  outline-width: 3px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -321,8 +319,28 @@ button {
 .card .card-body {
   background-color: hsl(205deg, 12%, 59%);
 }
-nav {
+.nav {
   display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav ul {
+  display: flex;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+.nav ul a {
+  transition: all 0.2s linear;
+}
+.nav ul a .logo {
+  font-weight: 500;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=stuff.css.map */

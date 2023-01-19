@@ -1,3 +1,26 @@
-nav {
+.nav {
   display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  ul {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    list-style: none;
+
+    a {
+      transition: all 0.2s linear;
+
+      .logo {
+        font-weight: 500;
+        font-size: 22px;
+      }
+    }
+  }
 }
