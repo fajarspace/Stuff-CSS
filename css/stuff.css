@@ -5,22 +5,6 @@
 /**
  * Theme: default
  */
-.text-white {
-  color: #fff;
-}
-
-.text-gray {
-  color: gray;
-}
-
-.text-gray-100 {
-  color: hsl(205deg, 18%, 86%);
-}
-
-.text-gray-500 {
-  color: hsl(205deg, 10%, 50%);
-}
-
 :root {
   font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
@@ -101,6 +85,42 @@ samp {
 
 kbd {
   font-weight: bolder;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-gray-100 {
+  color: hsl(205deg, 18%, 86%);
+}
+
+.text-gray-200 {
+  color: hsl(205deg, 16%, 77%);
+}
+
+.text-gray-300 {
+  color: hsl(205deg, 14%, 68%);
+}
+
+.text-gray-400 {
+  color: hsl(205deg, 12%, 59%);
+}
+
+.text-gray-500 {
+  color: hsl(205deg, 10%, 50%);
+}
+
+.text-gray-600 {
+  color: hsl(205deg, 15%, 41%);
+}
+
+.text-gray-700 {
+  color: hsl(205deg, 20%, 32%);
 }
 
 .container,
