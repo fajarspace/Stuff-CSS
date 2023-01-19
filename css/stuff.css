@@ -87,6 +87,14 @@ kbd {
   font-weight: bolder;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .text-white {
   color: #fff;
 }
@@ -121,6 +129,110 @@ kbd {
 
 .text-gray-700 {
   color: hsl(205deg, 20%, 32%);
+}
+
+.text-lightblue {
+  color: lightblue;
+}
+
+.text-darkblue {
+  color: #000C66;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-yellow-100 {
+  color: #ffecb3;
+}
+
+.text-yellow-200 {
+  color: #ffe082;
+}
+
+.text-yellow-300 {
+  color: #ffd54f;
+}
+
+.text-yellow-400 {
+  color: #ffca28;
+}
+
+.text-yellow-500 {
+  color: #ffc107;
+}
+
+.text-yellow-600 {
+  color: #ffb300;
+}
+
+.text-yellow-700 {
+  color: #ffa000;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-green-100 {
+  color: #c8e6c9;
+}
+
+.text-green-200 {
+  color: #a5d6a7;
+}
+
+.text-green-300 {
+  color: #81c784;
+}
+
+.text-green-400 {
+  color: #66bb6a;
+}
+
+.text-green-500 {
+  color: #4caf50;
+}
+
+.text-green-600 {
+  color: #43a047;
+}
+
+.text-green-700 {
+  color: #388e3c;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-red-100 {
+  color: #ffcdd2;
+}
+
+.text-red-200 {
+  color: #ef9a9a;
+}
+
+.text-red-300 {
+  color: #e57373;
+}
+
+.text-red-400 {
+  color: #ef5350;
+}
+
+.text-red-500 {
+  color: #f44336;
+}
+
+.text-red-600 {
+  color: #e53935;
+}
+
+.text-red-700 {
+  color: #d32f2f;
 }
 
 .container,
