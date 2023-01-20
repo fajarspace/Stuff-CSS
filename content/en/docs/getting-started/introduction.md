@@ -1,9 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
+description: "Stuff CSS is a simple frontend toolkit. Build anything—from prototype to production—in minutes."
+lead: "Stuff CSS is a simple frontend toolkit. Build anything from prototype to production in minutes."
 draft: false
 images: []
 menu:
@@ -15,7 +13,7 @@ toc: true
 
 ## Quick Start
 
-There are two main ways to get started with Doks:
+There are three main ways to get started with Stuff CSS:
 
 ### Install manually
 
