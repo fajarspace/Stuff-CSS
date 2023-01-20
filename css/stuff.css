@@ -319,28 +319,69 @@ button {
 .card .card-body {
   background-color: hsl(205deg, 12%, 59%);
 }
-.nav {
-  display: flex;
-  top: 0;
-  left: 0;
-  justify-content: space-between;
+.topnav {
   width: 100%;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #333;
+  /* Style the links inside the navigation bar */
+  /* Change the color of links on hover */
+  /* Add an active class to highlight the current page */
+  /* Hide the link that should open and close the topnav on small screens */
 }
-.nav ul {
-  display: flex;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  align-items: center;
-  list-style: none;
+.topnav a {
+  display: block;
+  padding: 14px 16px;
+  color: #f2f2f2;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
 }
-.nav ul a {
-  transition: all 0.2s linear;
+.topnav a.logo {
+  float: left;
 }
-.nav ul a .logo {
-  font-weight: 500;
-  font-size: 22px;
+.topnav a.item {
+  float: right;
+}
+.topnav a.menu {
+  float: right;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+    float: right;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
 }
 
 /*# sourceMappingURL=stuff.css.map */
