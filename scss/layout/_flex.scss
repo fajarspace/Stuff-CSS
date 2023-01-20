@@ -1,0 +1,40 @@
+@if ($enable-classes and $enable-flex) {
+
+  .flex {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    &>* {
+      min-width: 0; // HACK for childs in overflow
+    }
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .flex-start {
+    justify-content: flex-start;
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .flex-baseline {
+    justify-content: baseline;
+  }
+
+  .flex-space-around {
+    justify-content: space-around;
+  }
+
+  .flex-space-between {
+    justify-content: space-between;
+  }
+}

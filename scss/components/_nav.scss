@@ -12,7 +12,6 @@
 nav,
 nav ul {
   display: flex;
-  background-color: aqua;
 }
 
 nav {
@@ -37,7 +36,7 @@ nav {
   li {
     display: inline-block;
     margin: 0;
-    padding: 2px;
+    padding: 0;
 
     // Minimal support for buttons and forms elements
     >* {
