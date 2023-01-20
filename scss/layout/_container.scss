@@ -1,42 +1,159 @@
- /**
- * Container
- */
- @if ($enable-class-container and $enable-classes) {
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
-   .container,
-   .container-fluid {
-     width: 100%;
-     margin-right: auto;
-     margin-left: auto;
-     padding-right: var(--spacing);
-     padding-left: var(--spacing);
-   }
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
-   .container {
-     @if map-get($breakpoints, "sm") {
-       @media (min-width: map-get($breakpoints, "sm")) {
-         max-width: map-get($viewports, "sm");
-         padding-right: 0;
-         padding-left: 0;
-       }
-     }
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
-     @if map-get($breakpoints, "md") {
-       @media (min-width: map-get($breakpoints, "md")) {
-         max-width: map-get($viewports, "md");
-       }
-     }
+.container-xl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
-     @if map-get($breakpoints, "lg") {
-       @media (min-width: map-get($breakpoints, "lg")) {
-         max-width: map-get($viewports, "lg");
-       }
-     }
+.container-lg {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
-     @if map-get($breakpoints, "xl") {
-       @media (min-width: map-get($breakpoints, "xl")) {
-         max-width: map-get($viewports, "xl");
-       }
-     }
-   }
- }
+.container-md {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+@media (min-width: 576px) {
+  .container-sm {
+    max-width: 540px;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md {
+    max-width: 720px;
+  }
+
+  .container-sm {
+    max-width: 720px;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg {
+    max-width: 960px;
+  }
+
+  .container-md {
+    max-width: 960px;
+  }
+
+  .container-sm {
+    max-width: 960px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl {
+    max-width: 1140px;
+  }
+
+  .container-lg {
+    max-width: 1140px;
+  }
+
+  .container-md {
+    max-width: 1140px;
+  }
+
+  .container-sm {
+    max-width: 1140px;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1320px;
+  }
+
+  .container-xl {
+    max-width: 1320px;
+  }
+
+  .container-lg {
+    max-width: 1320px;
+  }
+
+  .container-md {
+    max-width: 1320px;
+  }
+
+  .container-sm {
+    max-width: 1320px;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+}

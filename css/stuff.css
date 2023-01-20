@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * stuffcss v1.0.0 (https://stuffcss.com)
  * Copyright 2023 - Licensed under ISC
@@ -25,33 +26,75 @@ small {
   font-size: 0.875em;
 }
 
-h1,
-h2,
-h3,
-h4,
+h6,
 h5,
-h6 {
-  font-weight: 700;
-}
-
+h4,
+h3,
+h2,
 h1 {
-  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-h2 {
-  font-size: 1.75rem;
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
 }
 
-h3 {
-  font-size: 1.5rem;
+@media (min-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
 }
 
-h4 {
+@media (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h5 {
-  font-size: 1.125rem;
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 [type=checkbox],
@@ -241,41 +284,146 @@ kbd {
   background-color: #F5F6F7;
 }
 
-/**
-* Container
-*/
-.container,
-.container-fluid {
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--spacing);
-  padding-left: var(--spacing);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-xl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-lg {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-md {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
 }
 
 @media (min-width: 576px) {
+  .container-sm {
+    max-width: 540px;
+  }
   .container {
-    max-width: 510px;
-    padding-right: 0;
-    padding-left: 0;
+    max-width: 540px;
   }
 }
 @media (min-width: 768px) {
+  .container-md {
+    max-width: 720px;
+  }
+  .container-sm {
+    max-width: 720px;
+  }
   .container {
-    max-width: 700px;
+    max-width: 720px;
   }
 }
 @media (min-width: 992px) {
+  .container-lg {
+    max-width: 960px;
+  }
+  .container-md {
+    max-width: 960px;
+  }
+  .container-sm {
+    max-width: 960px;
+  }
   .container {
-    max-width: 920px;
+    max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
+  .container-xl {
+    max-width: 1140px;
+  }
+  .container-lg {
+    max-width: 1140px;
+  }
+  .container-md {
+    max-width: 1140px;
+  }
+  .container-sm {
+    max-width: 1140px;
+  }
   .container {
-    max-width: 1130px;
+    max-width: 1140px;
   }
 }
-
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 1320px;
+  }
+  .container-xl {
+    max-width: 1320px;
+  }
+  .container-lg {
+    max-width: 1320px;
+  }
+  .container-md {
+    max-width: 1320px;
+  }
+  .container-sm {
+    max-width: 1320px;
+  }
+  .container {
+    max-width: 1320px;
+  }
+}
 /**
 * Grid
 * Minimal grid system with auto-layout columns
@@ -319,69 +467,51 @@ button {
 .card .card-body {
   background-color: hsl(205deg, 12%, 59%);
 }
-.topnav {
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-  /* Style the links inside the navigation bar */
-  /* Change the color of links on hover */
-  /* Add an active class to highlight the current page */
-  /* Hide the link that should open and close the topnav on small screens */
-}
-.topnav a {
-  display: block;
-  padding: 14px 16px;
-  color: #f2f2f2;
-  font-size: 17px;
-  text-align: center;
-  text-decoration: none;
-}
-.topnav a.logo {
+/**
+ * Nav
+ */
+:where(nav li)::before {
   float: left;
-}
-.topnav a.item {
-  float: right;
-}
-.topnav a.menu {
-  float: right;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.topnav .icon {
-  display: none;
+  content: "​";
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    display: block;
-    float: right;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .topnav.responsive a {
-    display: block;
-    float: none;
-    text-align: left;
-  }
+nav,
+nav ul {
+  display: flex;
 }
-.fixed-top {
-  position: fixed;
-  top: 0;
+
+nav {
+  justify-content: space-between;
+}
+nav ol,
+nav ul {
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 2px;
+}
+nav li > * {
+  --spacing: 0;
+}
+nav :where(a, [role=link]) {
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+nav :where(a, [role=link]):is([aria-current], :hover, :active, :focus) {
+  text-decoration: none;
+}
+nav [role=button] {
+  margin-right: inherit;
+  margin-left: inherit;
+  padding: 15px 5px;
 }
 
 /*# sourceMappingURL=stuff.css.map */

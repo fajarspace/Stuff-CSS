@@ -1,89 +1,65 @@
-.topnav {
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
+/**
+ * Nav
+ */
 
+// Prevent VoiceOver from ignoring list semantics in Safari (opinionated)
+:where(nav li)::before {
+  float: left;
+  content: "\200B";
+}
 
-  /* Style the links inside the navigation bar */
-  a {
-    display: block;
-    padding: 14px 16px;
-    color: #f2f2f2;
-    font-size: 17px;
-    text-align: center;
+// Horizontal Nav
+nav,
+nav ul {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+
+  ol,
+  ul {
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+
+    &:first-of-type {
+      // margin-left: 20px;
+    }
+
+    &:last-of-type {
+      // margin-right: 20px;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 2px;
+
+    // Minimal support for buttons and forms elements
+    >* {
+      --spacing: 0;
+    }
+  }
+
+  :where(a, [role="link"]) {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 15px 5px;
+    border-radius: 10px;
     text-decoration: none;
 
-    .logo {
-      float: left;
-    }
-
-    .item {
-      float: right;
-    }
-
-    .menu {
-      float: right;
-    }
-
-    .item-left {
-      float: left !important;
+    &:is([aria-current], :hover, :active, :focus) {
+      text-decoration: none;
     }
   }
 
-
-
-  /* Change the color of links on hover */
-  a:hover {
-    background-color: #ddd;
-    color: black;
+  // Minimal support for role="button"
+  [role="button"] {
+    margin-right: inherit;
+    margin-left: inherit;
+    padding: 15px 5px;
   }
-
-  /* Add an active class to highlight the current page */
-  a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  /* Hide the link that should open and close the topnav on small screens */
-  .icon {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  .topnav {
-    a {
-      &:not(:first-child) {
-        display: none;
-      }
-    }
-
-    a.icon {
-      display: block;
-      float: right;
-    }
-  }
-
-  .topnav.responsive {
-    position: relative;
-
-    .icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    a {
-      display: block;
-      float: none;
-      text-align: left;
-    }
-  }
-}
-
-
-.fixed-top {
-  position: fixed;
-  top: 0;
 }
