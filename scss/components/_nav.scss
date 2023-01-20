@@ -12,21 +12,23 @@
     font-size: 17px;
     text-align: center;
     text-decoration: none;
+
+    .logo {
+      float: left;
+    }
+
+    .item {
+
+      float: right;
+
+    }
+
+    .menu {
+      float: right;
+    }
   }
 
-  a.logo {
-    float: left;
-  }
 
-  a.item {
-
-    float: right;
-
-  }
-
-  a.menu {
-    float: right;
-  }
 
   /* Change the color of links on hover */
   a:hover {
