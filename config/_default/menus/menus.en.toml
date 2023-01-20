@@ -1,14 +1,14 @@
 [[docs]]
-  name = "Prologue"
+  name = "getting-started"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "getting-started"
+  url = "/docs/getting-started/"
 
 [[docs]]
-  name = "Help"
+  name = "Layout"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "layout"
+  url = "/docs/layout/"
 
 # [[docs]]
 #   name = "Lorem"
@@ -30,8 +30,8 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
+  url = "/docs/getting-started/introduction/"
+# url = "/docs/1.0/getting-started/introduction/"
   weight = 10
 
 # [[main]]
@@ -48,13 +48,13 @@
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/getting-started/introduction/"
 
 [[main]]
   name = "Quick Start"
   weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
+  identifier = "themes"
+  url = "/docs/getting-started/themes/"
   parent = "get-started"
 
 [[main]]
