@@ -1,0 +1,60 @@
+{
+  "name": "stuffcss",
+  "version": "1.0.0",
+  "description": "Simple & Minimal CSS",
+  "author": "fajarspace",
+  "main": "css/stuff.min.css",
+  "homepage": "https://stuffcss.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajarspace/stuffcss.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework",
+    "dark-mode",
+    "dark-theme",
+    "minimal",
+    "minimalist",
+    "native-html",
+    "scss-framework",
+    "semantic"
+  ],
+  "scripts": {
+    "watch": "npm-run-all --parallel watch:stuffcss watch:docs:scss watch:docs:html watch:docs:js --silent",
+    "build": "npm-run-all scss:sorter:stuffcss build:stuffcss --silent",
+    "build:stuffcss": "npm-run-all css:compile:stuffcss css:prefix:stuffcss css:minify:stuffcss --silent",
+    "css:compile:stuffcss": "sass --style expanded --source-map --embed-sources --no-error-css scss/:css/",
+    "css:minify:stuffcss": "cleancss -O1 --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix .min css/*.css css/*/*.css !css/*.min.css !css/*/*.min.css",
+    "css:prefix:stuffcss": "postcss --config css --replace css/*.css css/*/*.css !css/*.min.css",
+    "scss:sorter:stuffcss": "postcss --config scss ./scss/**/*.scss --replace",
+    "precss:compile:stuffcss": "echo '[@stuffcss/stuff] Compile stuffcss .css files'",
+    "precss:minify:stuffcss": "echo '[@stuffcss/stuff] Minify stuffcss .css files'",
+    "prescss:sorter:stuffcss": "echo '[@stuffcss/stuff] Order stuffcss .scss properties'",
+    "watch:stuffcss": "nodemon --watch scss/ --ext scss --exec 'npm run build:stuffcss'"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "autoprefixer": "^10.4.12",
+    "clean-css-cli": "^5.6.1",
+    "css-declaration-sorter": "^6.3.1",
+    "html-includes": "^4.4.1",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "postcss-scss": "^4.0.5",
+    "rollup": "^2.79.1",
+    "sass": "^1.55.0",
+    "uglify-js": "^3.17.2"
+  },
+  "browserslist": [
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "not ie > 0"
+  ]
+}
