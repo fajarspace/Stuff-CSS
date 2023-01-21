@@ -2,8 +2,8 @@
   "name": "stuffcss",
   "version": "1.0.4",
   "description": "Minimal CSS Framework for semantic HTML",
-  "author": "Lucas Larroche",
-  "main": "css/stuff.min.css",
+  "author": "fajarspace",
+  "main": "docs/index.html",
   "homepage": "https://stuffcss.netlify.app",
   "license": "MIT",
   "repository": {
