@@ -89,7 +89,7 @@
   --table-row-stripped-background-color: #{rgba($grey-500, 0.05)};
 
   // Code
-  --code-background-color: #383838;
+  --code-background-color: #484848;
   // --code-background-color: #{mix($black, $grey-900, 12.5%)};
   --code-color: var(--muted-color);
   // --code-color: var(--muted-color);
@@ -111,7 +111,7 @@
   $box-shadow-elevation: 1rem;
   $box-shadow-blur-strengh: 6rem;
   $box-shadow-opacity: 0.06;
-  --card-background-color: #{mix($black, $grey-900, 25%)};
+  --card-background-color: #393939;
   --card-border-color: var(--card-background-color);
   --card-box-shadow: #{($box-shadow-elevation * 0.5 * 0.029)} #{($box-shadow-elevation * 0.029)} #{($box-shadow-blur-strengh * 0.029)} #{rgba($black, ($box-shadow-opacity * 0.283))},
   #{($box-shadow-elevation * 0.5 * 0.067)} #{($box-shadow-elevation * 0.067)} #{($box-shadow-blur-strengh * 0.067)} #{rgba($black, ($box-shadow-opacity * 0.4))},
