@@ -1,30 +1,24 @@
 ---
 title: "Grid"
 description: "Solutions to common problems."
-lead: "Solutions to common problems."
+lead: ""
 date: 2020-11-12T15:22:20+01:00
 lastmod: 2020-11-12T15:22:20+01:00
 draft: false
 images: []
 menu: 
   docs:
-    parent: "help"
+    parent: "layout"
 weight: 620
 toc: true
 ---
 
-## Problems updating npm packages
+auto-layout columns.
 
-Delete the `./node_modules` folder, and run again:
-
-```bash
-npm install
-```
-
-## Problems with cache
-
-Delete the temporary directories:
-
-```bash
-npm run clean
+```html
+<div class='grid'>
+  <div>...</div>
+  <div>...</div>
+  <div>...</div>
+</div>
 ```
