@@ -9,7 +9,7 @@ export const themeSwitcher = {
     dark: '<i>Light 🌝</i>',
   },
   buttonsTarget: '.theme-switcher',
-  localStorageKey: 'picoPreferedColorScheme',
+  localStorageKey: 'stuffPreferedColorScheme',
 
   // Init
   init() {
@@ -52,7 +52,7 @@ export const themeSwitcher = {
   // Set scheme
   set scheme(scheme) {
     if (scheme == 'auto') {
-      this.preferedColorScheme == 'dark' ? this._scheme = 'dark' : this._scheme = 'light';
+      this.preferedColorScheme == 'light' ? this._scheme = 'light' : this._scheme = 'dark';
     }
     else if (scheme == 'dark' || scheme == 'light') {
       this._scheme = scheme;
