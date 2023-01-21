@@ -6,7 +6,7 @@ import toggleNavigation from './src/toggle-navigation';
 
 // Theme switcher
 themeSwitcher.addButton({
-  tag: 'BUTTON',
+  tag: 'a',
   class: 'contrast switcher theme-switcher',
   target: 'nav',
 });
