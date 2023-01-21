@@ -36,7 +36,7 @@
     opacity: 0;
     pointer-events: none;
   }
-  
+
   // Caret
   &[data-placement="top"]::after,
   &::after {
@@ -52,14 +52,15 @@
   }
 
   &[data-placement="bottom"] {
+
     &::before,
     &::after {
       top: 100%;
       bottom: auto;
       transform: translate(-50%, .25rem);
     }
-    
-    &:after{
+
+    &:after {
       transform: translate(-50%, -.3rem);
       border: .3rem solid transparent;
       border-bottom: .3rem solid;
@@ -67,6 +68,7 @@
   }
 
   &[data-placement="left"] {
+
     &::before,
     &::after {
       top: 50%;
@@ -75,8 +77,8 @@
       left: auto;
       transform: translate(-.25rem, -50%);
     }
-    
-    &:after{
+
+    &:after {
       transform: translate(.3rem, -50%);
       border: .3rem solid transparent;
       border-left: .3rem solid;
@@ -84,6 +86,7 @@
   }
 
   &[data-placement="right"] {
+
     &::before,
     &::after {
       top: 50%;
@@ -92,8 +95,8 @@
       left: 100%;
       transform: translate(.25rem, -50%);
     }
-    
-    &:after{
+
+    &:after {
       transform: translate(-.3rem, -50%);
       border: .3rem solid transparent;
       border-right: .3rem solid;
@@ -103,21 +106,23 @@
   // Display
   &:focus,
   &:hover {
+
     &::before,
     &::after {
       opacity: 1;
     }
   }
 
-  
+
   @if $enable-transitions {
 
     // Animations, excluding touch devices
     @media (hover: hover) and (pointer: fine) {
+
       &[data-placement="bottom"]:focus,
-      &[data-placement="bottom"]:hover
-      &:focus,
+      &[data-placement="bottom"]:hover &:focus,
       &:hover {
+
         &::before,
         &::after {
           animation-duration: .2s;
@@ -125,51 +130,57 @@
         }
 
         &::after {
-          animation-name: tooltip-caret-slide-top; 
+          animation-name: tooltip-caret-slide-top;
         }
       }
-      
+
       &[data-placement="bottom"] {
+
         &:focus,
         &:hover {
+
           &::before,
           &::after {
             animation-duration: .2s;
             animation-name: tooltip-slide-bottom;
           }
-  
+
           &::after {
-            animation-name: tooltip-caret-slide-bottom; 
+            animation-name: tooltip-caret-slide-bottom;
           }
         }
       }
-      
+
       &[data-placement="left"] {
+
         &:focus,
         &:hover {
+
           &::before,
           &::after {
             animation-duration: .2s;
             animation-name: tooltip-slide-left;
           }
-  
+
           &::after {
-            animation-name: tooltip-caret-slide-left; 
+            animation-name: tooltip-caret-slide-left;
           }
         }
       }
-      
+
       &[data-placement="right"] {
+
         &:focus,
         &:hover {
+
           &::before,
           &::after {
             animation-duration: .2s;
             animation-name: tooltip-slide-right;
           }
-  
+
           &::after {
-            animation-name: tooltip-caret-slide-right; 
+            animation-name: tooltip-caret-slide-right;
           }
         }
       }
@@ -180,95 +191,107 @@
         transform: translate(-50%, .75rem);
         opacity: 0;
       }
+
       to {
         transform: translate(-50%, -.25rem);
         opacity: 1;
       }
     }
-    
+
     @keyframes tooltip-caret-slide-top {
       from {
         opacity: 0;
       }
+
       50% {
         transform: translate(-50%, -.25rem);
         opacity: 0;
       }
+
       to {
         transform: translate(-50%, 0rem);
         opacity: 1;
       }
     }
-  
+
     @keyframes tooltip-slide-bottom {
       from {
         transform: translate(-50%, -.75rem);
         opacity: 0;
       }
+
       to {
         transform: translate(-50%, .25rem);
         opacity: 1;
       }
     }
-    
+
     @keyframes tooltip-caret-slide-bottom {
       from {
         opacity: 0;
       }
+
       50% {
         transform: translate(-50%, -.5rem);
         opacity: 0;
       }
+
       to {
         transform: translate(-50%, -.3rem);
         opacity: 1;
       }
     }
-  
+
     @keyframes tooltip-slide-left {
       from {
         transform: translate(.75rem, -50%);
         opacity: 0;
       }
+
       to {
         transform: translate(-.25rem, -50%);
         opacity: 1;
       }
     }
-    
+
     @keyframes tooltip-caret-slide-left {
       from {
         opacity: 0;
       }
+
       50% {
         transform: translate(.05rem, -50%);
         opacity: 0;
       }
+
       to {
         transform: translate(.3rem, -50%);
         opacity: 1;
       }
     }
-  
+
     @keyframes tooltip-slide-right {
       from {
         transform: translate(-.75rem, -50%);
         opacity: 0;
       }
+
       to {
         transform: translate(.25rem, -50%);
         opacity: 1;
       }
     }
-    
+
     @keyframes tooltip-caret-slide-right {
       from {
         opacity: 0;
       }
+
       50% {
         transform: translate(-.05rem, -50%);
         opacity: 0;
       }
+
       to {
         transform: translate(-.3rem, -50%);
         opacity: 1;

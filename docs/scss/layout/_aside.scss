@@ -2,12 +2,13 @@
  * Docs: Aside
  */
 
-main > aside {
+main>aside {
 
   nav {
     width: 100%;
+    padding-top: 15px;
     padding-bottom: var(--block-spacing-vertical);
-  
+
     @media (min-width: map-get($breakpoints, "lg")) {
       position: fixed;
       width: 200px;
@@ -44,14 +45,14 @@ main > aside {
 
       details {
         display: none;
-      } 
+      }
 
       @media (min-width: map-get($breakpoints, "lg")) {
         details {
           display: block;
         }
 
-        > a#toggle-docs-navigation {
+        >a#toggle-docs-navigation {
           display: none;
         }
       }
@@ -82,7 +83,7 @@ main > aside {
   }
 
   ul {
-    padding-left: 0.25rem;
+    padding-left: 1rem;
   }
 
   li a {
@@ -119,7 +120,7 @@ main > aside {
     }
 
     &[open] {
-      > summary {
+      >summary {
         margin-bottom: 0;
 
         &:not([role=button], :focus) {

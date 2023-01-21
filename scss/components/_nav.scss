@@ -11,9 +11,6 @@
   content: "\200B";
 }
 
-// Pico
-// ––––––––––––––––––––
-
 // Horizontal Nav
 nav,
 nav ul {
@@ -33,6 +30,7 @@ nav {
     &:first-of-type {
       margin-left: calc(var(--nav-element-spacing-horizontal) * -1);
     }
+
     &:last-of-type {
       margin-right: calc(var(--nav-element-spacing-horizontal) * -1);
     }
@@ -41,19 +39,17 @@ nav {
   li {
     display: inline-block;
     margin: 0;
-    padding: var(--nav-element-spacing-vertical)
-      var(--nav-element-spacing-horizontal);
+    padding: var(--nav-element-spacing-vertical) var(--nav-element-spacing-horizontal);
 
     // Minimal support for buttons and forms elements
-    > * {
+    >* {
       --spacing: 0;
     }
   }
 
   :where(a, [role="link"]) {
     display: inline-block;
-    margin: calc(var(--nav-link-spacing-vertical) * -1)
-      calc(var(--nav-link-spacing-horizontal) * -1);
+    margin: calc(var(--nav-link-spacing-vertical) * -1) calc(var(--nav-link-spacing-horizontal) * -1);
     padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -103,6 +99,7 @@ nav {
 
 // Vertical Nav
 aside {
+
   nav,
   ol,
   ul,
@@ -111,8 +108,7 @@ aside {
   }
 
   li {
-    padding: calc(var(--nav-element-spacing-vertical) * 0.5)
-      var(--nav-element-spacing-horizontal);
+    padding: calc(var(--nav-element-spacing-vertical) * 0.5) var(--nav-element-spacing-horizontal);
 
     a {
       display: block;

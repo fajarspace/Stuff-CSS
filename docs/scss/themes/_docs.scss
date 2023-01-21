@@ -21,6 +21,6 @@
 
 // Dark theme (Forced)
 // Enabled if forced with data-theme="dark"
-[data-theme="dark"] {
+[data-theme="light"] {
   @include dark;
 }

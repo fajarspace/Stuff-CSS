@@ -94,9 +94,10 @@
   --code-color: var(--muted-color);
   --code-kbd-background-color: var(--contrast);
   --code-kbd-color: var(--contrast-inverse);
-  --code-tag-color: #{hsl(330, 40%, 50%)};
-  --code-property-color: #{hsl(185, 40%, 40%)};
-  --code-value-color: #{hsl(40, 20%, 50%)};
+  --code-tag-color: #E16B74;
+  // --code-property-color: #{hsl(185, 30%, 50%)};
+  --code-property-color: #E4C07A;
+  --code-value-color: #97C379;
   --code-comment-color: #{$grey-300};
 
   // Accordion (<details>)

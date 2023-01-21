@@ -3,9 +3,10 @@
  */
 
 // Code block inside article
-article > footer.code {
+article>footer.code {
   background: var(--article-code-background-color);
 }
+
 article pre,
 article pre code {
   margin-bottom: 0;
@@ -14,10 +15,9 @@ article pre code {
 
 // Code block outside article
 // Horizontally aligned with <article> content
-section > pre {
+section>pre {
   margin: var(--block-spacing-vertical) 0;
-  padding: calc(var(--block-spacing-vertical) / 1.5)
-    var(--block-spacing-horizontal);
+  padding: calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);
   background: var(--article-code-background-color);
   box-shadow: var(--card-box-shadow);
 }
@@ -48,8 +48,7 @@ section > pre {
 
   // Spacing for Valid & Invalid badge
   code {
-    padding: calc(var(--block-spacing-vertical) / 1.5 + 14px + 0.75rem)
-      var(--block-spacing-horizontal);
+    padding: calc(var(--block-spacing-vertical) / 1 + 14px + 0.75rem) var(--block-spacing-horizontal);
   }
 }
 

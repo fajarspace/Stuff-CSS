@@ -2,7 +2,7 @@
 
 // Default: Dark theme
 @mixin dark {
-  --background-color: #{mix($black, $grey-900, 37.5%)};
+  --background-color: #393939;
 
   // Texts colors
   --color: #{$grey-200};
@@ -89,13 +89,16 @@
   --table-row-stripped-background-color: #{rgba($grey-500, 0.05)};
 
   // Code
-  --code-background-color: #{mix($black, $grey-900, 12.5%)};
+  --code-background-color: #383838;
+  // --code-background-color: #{mix($black, $grey-900, 12.5%)};
   --code-color: var(--muted-color);
+  // --code-color: var(--muted-color);
   --code-kbd-background-color: var(--contrast);
   --code-kbd-color: var(--contrast-inverse);
-  --code-tag-color: #{hsl(330, 30%, 50%)};
-  --code-property-color: #{hsl(185, 30%, 50%)};
-  --code-value-color: #{hsl(40, 10%, 50%)};
+  --code-tag-color: #E16B74;
+  // --code-property-color: #{hsl(185, 30%, 50%)};
+  --code-property-color: #E4C07A;
+  --code-value-color: #97C379;
   --code-comment-color: #{mix($grey-700, $grey-600)};
 
   // Accordion (<details>)

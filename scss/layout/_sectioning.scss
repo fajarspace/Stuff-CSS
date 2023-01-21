@@ -13,17 +13,14 @@ main {
   display: block;
 }
 
-// Pico
-// ––––––––––––––––––––
-
 // 1. Remove the margin in all browsers (opinionated)
 #{$semantic-root-element} {
   width: 100%;
   margin: 0; // 1
 
-  > header,
-  > main,
-  > footer {
+  >header,
+  >main,
+  >footer {
     width: 100%;
     margin-right: auto;
     margin-left: auto;

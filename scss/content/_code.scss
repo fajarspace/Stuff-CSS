@@ -23,9 +23,6 @@ pre {
   overflow: auto;
 }
 
-// Pico
-// ––––––––––––––––––––
-
 pre,
 code,
 kbd {
@@ -47,7 +44,7 @@ pre {
   margin-bottom: var(--spacing);
   overflow-x: auto;
 
-  > code {
+  >code {
     display: block;
     padding: var(--spacing);
     background: none;
@@ -58,6 +55,7 @@ pre {
 
 // Code Syntax
 code {
+
   // Tags
   b {
     color: var(--code-tag-color);

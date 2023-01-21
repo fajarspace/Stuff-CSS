@@ -1,12 +1,9 @@
 /*
  * Color Picker
- *
- * Pico.css - https://picocss.com
- * Copyright 2019-2022 - Licensed under MIT
  */
 
 export const colorPicker = {
-  
+
   // Config
   colors: null,
   buttonsTarget: '#customization article[data-theme="generated"]',
@@ -57,7 +54,7 @@ export const colorPicker = {
 
     // Buttons listeners
     this.buttons = document.querySelectorAll(this.selectorButton);
-    this.buttons.forEach( button => { 
+    this.buttons.forEach(button => {
       button.addEventListener('click', event => {
         let color = event.target.getAttribute('data-color');
         this.setActiveButton(color);
@@ -76,7 +73,7 @@ export const colorPicker = {
   // Set active button
   setActiveButton(color) {
     // Remove all active states
-    this.buttons.forEach( button => {
+    this.buttons.forEach(button => {
       button.removeAttribute('class');
     });
 
@@ -101,9 +98,9 @@ export const colorPicker = {
       '.inverse': data['inverse'],
     };
 
-    Object.keys(swaps).forEach( swap => {
+    Object.keys(swaps).forEach(swap => {
       let targets = document.querySelectorAll(this.selectorSection + ' ' + swap);
-      targets.forEach( target => {
+      targets.forEach(target => {
         target.innerHTML = swaps[swap];
       });
     });

@@ -1,9 +1,9 @@
 // Commons Styles
+
 :root {
   // Typography
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family: 'Nunito', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);
   --line-height: 1.5;
   --font-weight: 400;
   --font-size: 16px;
@@ -77,10 +77,11 @@
 
 // Responsives spacings
 @if $enable-responsive-spacings {
+
   // Sectioning
-  #{$semantic-root-element} > header,
-  #{$semantic-root-element} > main,
-  #{$semantic-root-element} > footer,
+  #{$semantic-root-element}>header,
+  #{$semantic-root-element}>main,
+  #{$semantic-root-element}>footer,
   section {
     @if map-get($breakpoints, "sm") {
       @media (min-width: map-get($breakpoints, "sm")) {
@@ -135,7 +136,7 @@
   }
 
   // Modal
-  dialog > article {
+  dialog>article {
 
     --block-spacing-vertical: calc(var(--spacing) * 2);
     --block-spacing-horizontal: var(--spacing);
@@ -162,6 +163,7 @@ a {
 
   // Secondary & Contrast
   @if $enable-classes {
+
     &.secondary,
     &.contrast {
       --text-decoration: underline;
@@ -222,13 +224,14 @@ h5 {
 // Table
 thead,
 tfoot {
+
   th,
   td {
     --border-width: 3px;
   }
 }
 
-:not(thead, tfoot) > * > td {
+:not(thead, tfoot)>*>td {
   --font-size: 0.875em;
 }
 
