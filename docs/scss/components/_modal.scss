@@ -17,9 +17,9 @@ dialog.example {
   height: inherit;
   min-height: inherit;
   padding: 0;
-  background-color:inherit;
+  background-color: inherit;
 
-  article {
+  .card {
     max-width: inherit;
   }
 
@@ -29,6 +29,6 @@ dialog.example {
   }
 }
 
-.dialog-is-open body > button {
+.dialog-is-open body>button {
   filter: blur(0.125rem);
 }

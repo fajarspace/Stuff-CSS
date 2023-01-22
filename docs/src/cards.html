@@ -21,23 +21,24 @@
           <h1>Cards</h1>
           <h2>A flexible container with graceful spacings across devices and viewports.</h2>
         </hgroup>
-        <article aria-label="Card example">
+        <div class="card" aria-label="Card example">
           I'm a card!
-        </article>
-        <pre><code>&lt;<b>article</b>&gt;I'm a card!&lt;/<b>article</b>&gt;</code></pre>
+        </div>
+        <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;I'm a card!&lt;/<b>div</b>&gt;</code></pre>
         <p>You can use <code>&lt;<b>header</b>&gt;</code> and footer <code>&lt;<b>footer</b>&gt;</code> inside
-          <code>&lt;<b>article</b>&gt;</code></p>
-        <article aria-label="Card sectioning example">
+          <code>&lt;<b>div</b>&gt;</code>
+        </p>
+        <div class="card" aria-label="Card sectioning example">
           <header>Header</header>
           Body
           <footer>Footer</footer>
-        </article>
+        </div>
 
-        <pre><code>&lt;<b>article</b>&gt;
+        <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;
   &lt;<b>header</b>&gt;Header&lt;/<b>header</b>&gt;
-  Body
+    Body
   &lt;<b>footer</b>&gt;Footer&lt;/<b>footer</b>&gt;
-&lt;/<b>article</b>&gt;</code></pre>
+&lt;/<b>div</b>&gt;</code></pre>
 
       </section>
 

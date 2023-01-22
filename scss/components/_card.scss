@@ -1,8 +1,8 @@
 /**
- * Card (<article>)
+ * Card (<.card>)
  */
 
-article {
+.card {
   margin: var(--block-spacing-vertical) 0;
   padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
   border-radius: var(--border-radius);

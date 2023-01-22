@@ -21,7 +21,7 @@
           <h1>Buttons</h1>
           <h2>The essential button in pure HTML, without <code>.classes</code> for the default style.</h2>
         </hgroup>
-        <article aria-label="Button example">
+        <div class="card" aria-label="Button example">
           <button aria-label="Button">Button</button>
           <input type="submit">
           <footer class="code">
@@ -30,10 +30,10 @@
 &lt;<b>input</b> <i>type</i>=<u>"submit"</u>&gt;</code></pre>
 
           </footer>
-        </article>
+        </div>
         <p>Buttons are <code><i>width</i>: <u>100%</u>;</code> by default. Use <code><i>role</i>=<u>"button"</code> on
           an inline element if you need an inline button.</p>
-        <article aria-label="Inline buttons examples">
+        <div class="card" aria-label="Inline buttons examples">
           <a href="#" onclick="event.preventDefault()" role="button">Link</a>
           <a href="#" onclick="event.preventDefault()" role="button">Link</a>
           <footer class="code">
@@ -42,10 +42,10 @@
 &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u>&gt;Link&lt;/<b>a</b>&gt;</code></pre>
 
           </footer>
-        </article>
+        </div>
         <p>Buttons come with <code>.secondary</code> and <code>.contrast</code> styles.</p>
         <p>ℹ️&nbsp;These classes are not available in the <a href="classless.html">class-less version</a>.</p>
-        <article aria-label="Buttons styles examples">
+        <div class="card" aria-label="Buttons styles examples">
           <a href="#" onclick="event.preventDefault()" role="button" class="secondary">Secondary</a>
           <a href="#" onclick="event.preventDefault()" role="button" class="contrast">Contrast</a>
           <footer class="code">
@@ -54,9 +54,9 @@
 &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"contrast"</u>&gt;Contrast&lt;/<b>a</b>&gt;</code></pre>
 
           </footer>
-        </article>
+        </div>
         <p>And a classic <code>.outline</code> variant.</p>
-        <article aria-label="Outline style examples">
+        <div class="card" aria-label="Outline style examples">
           <a href="#" onclick="event.preventDefault()" role="button" class="outline">Primary</a>
           <a href="#" onclick="event.preventDefault()" role="button" class="secondary outline">Secondary</a>
           <a href="#" onclick="event.preventDefault()" role="button" class="contrast outline">Contrast</a>
@@ -67,7 +67,7 @@
 &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"contrast outline"</u>&gt;Contrast&lt;/<b>a</b>&gt;</code></pre>
 
           </footer>
-        </article>
+        </div>
       </section>
 
       ${require('./_footer.html')}
