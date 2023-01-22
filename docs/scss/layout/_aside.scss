@@ -6,7 +6,7 @@ main>aside {
 
   nav {
     width: 100%;
-    padding-top: 15px;
+    padding-top: 13px;
     padding-bottom: var(--block-spacing-vertical);
 
     @media (min-width: map-get($breakpoints, "lg")) {

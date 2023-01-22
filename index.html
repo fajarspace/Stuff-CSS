@@ -9,7 +9,15 @@
 </head>
 
 <body>
-  <h1>halo</h1>
+  <span id="myElement"></span>
+
+  <!-- The script itself, loaded AFTER your root element. -->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script>
+    new TypeIt("#myElement", {
+      strings: "Haloo",
+    }).go();
+  </script>
 </body>
 
 </html>

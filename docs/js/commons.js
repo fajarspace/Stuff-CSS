@@ -8,7 +8,7 @@ import toggleNavigation from './src/toggle-navigation';
 themeSwitcher.addButton({
   tag: 'li',
   class: 'contrast switcher theme-switcher',
-  target: 'nav',
+  target: '.theme',
 });
 themeSwitcher.init();
 

@@ -8,7 +8,7 @@
     &:first-of-type {
       --font-weight: bold;
     }
-    
+
     i {
       font-style: normal;
     }
@@ -31,7 +31,7 @@
       border-top-left-radius: var(--border-radius);
     }
 
-    ~ article {
+    ~article {
       margin-top: 0;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
@@ -55,6 +55,7 @@
         background-repeat: no-repeat;
         box-shadow: inset 0 0 1rem 0 rgba(0, 0, 0, 0.25);
       }
+
       &[data-color="lime"],
       &[data-color="yellow"],
       &[data-color="amber"] {
@@ -99,10 +100,10 @@
   }
 
   .grid {
-    > * {
+    >* {
       padding: calc(var(--spacing) / 2) 0;
       border-radius: var(--border-radius);
-      background: var(--code-background-color);
+      // background: var(--code-background-color);
       font-size: 87.5%;
       text-align: center;
     }
