@@ -8,10 +8,6 @@
     &:first-of-type {
       --font-weight: bold;
     }
-
-    i {
-      font-style: normal;
-    }
   }
 }
 
@@ -31,7 +27,7 @@
       border-top-left-radius: var(--border-radius);
     }
 
-    ~.card {
+    .card {
       margin-top: 0;
       border-top-right-radius: 0;
       border-top-left-radius: 0;
