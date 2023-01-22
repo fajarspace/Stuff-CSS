@@ -18,7 +18,7 @@
   --muted-border-color: #{mix($grey-900, $grey-800, 75%)};
 
   // Primary colors <a>
-  --primary: #fefefe;
+  --primary: #{$grey-50};
   --primary-hover: #fefefe;
   --primary-focus: #{rgba($primary-600, 0.25)};
   --primary-inverse: black;
@@ -111,7 +111,8 @@
   $box-shadow-elevation: 1rem;
   $box-shadow-blur-strengh: 6rem;
   $box-shadow-opacity: 0.06;
-  --card-background-color: #393939;
+  --card-background-color: #484848;
+  ;
   --card-border-color: var(--card-background-color);
   --card-box-shadow: #{($box-shadow-elevation * 0.5 * 0.029)} #{($box-shadow-elevation * 0.029)} #{($box-shadow-blur-strengh * 0.029)} #{rgba($black, ($box-shadow-opacity * 0.283))},
   #{($box-shadow-elevation * 0.5 * 0.067)} #{($box-shadow-elevation * 0.067)} #{($box-shadow-blur-strengh * 0.067)} #{rgba($black, ($box-shadow-opacity * 0.4))},

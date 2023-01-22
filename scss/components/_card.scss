@@ -7,18 +7,17 @@ article {
   padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
   border-radius: var(--border-radius);
   background: var(--card-background-color);
-  box-shadow: var(--card-box-shadow);
+  // box-shadow: var(--card-box-shadow);
 
-  > header,
-  > footer {
+  >header,
+  >footer {
     margin-right: calc(var(--block-spacing-horizontal) * -1);
     margin-left: calc(var(--block-spacing-horizontal) * -1);
-    padding: calc(var(--block-spacing-vertical) * 0.66)
-      var(--block-spacing-horizontal);
+    padding: calc(var(--block-spacing-vertical) * 0.66) var(--block-spacing-horizontal);
     background-color: var(--card-sectionning-background-color);
   }
 
-  > header {
+  >header {
     margin-top: calc(var(--block-spacing-vertical) * -1);
     margin-bottom: var(--block-spacing-vertical);
     border-bottom: var(--border-width) solid var(--card-border-color);
@@ -26,7 +25,7 @@ article {
     border-top-left-radius: var(--border-radius);
   }
 
-  > footer {
+  >footer {
     margin-top: var(--block-spacing-vertical);
     margin-bottom: calc(var(--block-spacing-vertical) * -1);
     border-top: var(--border-width) solid var(--card-border-color);
