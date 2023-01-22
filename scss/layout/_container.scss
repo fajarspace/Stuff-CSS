@@ -5,14 +5,25 @@
 
   .container,
   .container-fluid {
-    width: 100%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: var(--spacing);
-    padding-left: var(--spacing);
+
+    // padding-right: var(--spacing);
+    // padding-left: var(--spacing);
+
   }
 
-  .container {
+  @media only screen and (max-width: 760px) {
+
+    .container,
+    .container-fluid {
+      width: 90%;
+    }
+  }
+
+  .container,
+  .container-fluid {
     @if map-get($breakpoints, "sm") {
       @media (min-width: map-get($breakpoints, "sm")) {
         max-width: map-get($viewports, "sm");

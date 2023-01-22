@@ -1,9 +1,10 @@
 // Commons Styles
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
 
 :root {
   // Typography
-  --font-family: 'Nunito', sans-serif;
-  src: url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);
+  --font-family: 'Open Sans', sans-serif;
+
   --line-height: 1.5;
   --font-weight: 400;
   --font-size: 16px;
