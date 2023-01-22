@@ -109,6 +109,16 @@
     }
   }
 
+  .grid-auto {
+    >* {
+      padding: calc(var(--spacing) / 2) 0;
+      border-radius: var(--border-radius);
+      // background: var(--code-background-color);
+      font-size: 87.5%;
+      text-align: center;
+    }
+  }
+
   details {
     margin-top: calc(var(--typography-spacing-vertical) * 2);
 
