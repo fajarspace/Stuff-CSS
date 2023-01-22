@@ -86,13 +86,18 @@ main>aside {
     padding-left: 1rem;
   }
 
-  li a {
-    --nav-link-spacing-vertical: 0.25rem;
-    --nav-link-spacing-horizontal: 0.75rem;
+  li {
+    border-left: 1px solid var(--primary);
 
-    svg {
-      vertical-align: middle;
+    a {
+      --nav-link-spacing-vertical: 0.25rem;
+      --nav-link-spacing-horizontal: 0.75rem;
+
+      svg {
+        vertical-align: middle;
+      }
     }
+
   }
 
   a.secondary:focus {
