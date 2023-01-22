@@ -17,8 +17,8 @@
   --muted-color: #{$grey-500};
   --muted-border-color: #{mix($grey-900, $grey-800, 75%)};
 
-  // Primary colors
-  --primary: #{$primary-600};
+  // Primary colors <a>
+  --primary: #fefefe;
   --primary-hover: #{$primary-500};
   --primary-focus: #{rgba($primary-600, 0.25)};
   --primary-inverse: #{$white};

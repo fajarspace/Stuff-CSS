@@ -18,8 +18,8 @@
   --muted-color: #{$grey-500};
   --muted-border-color: #{$grey-50};
 
-  // Primary colors
-  --primary: #{$primary-600};
+  // Primary colors <a>
+  --primary: black;
   --primary-hover: #{$primary-700};
   --primary-focus: #{rgba($primary-600, 0.125)};
   --primary-inverse: #{$white};
