@@ -12,7 +12,7 @@ body>main {
   @if map-get($breakpoints, "lg") {
     @media (min-width: map-get($breakpoints, "lg")) {
       --block-spacing-horizontal: calc(var(--spacing) * 1.75);
-      grid-column-gap: calc(var(--block-spacing-horizontal) * 3);
+      grid-column-gap: calc(var(--block-spacing-horizontal) * 1);
       display: grid;
       grid-template-columns: 200px auto;
     }
