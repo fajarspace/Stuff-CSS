@@ -50,52 +50,7 @@
 
           </footer>
         </article>
-        <p>There are 2 ways to customize your version of Stuff.css:</p>
-        <h3>Overriding CSS variables</h3>
-        <p>All Stuff's styles and colors are set with <em>CSS custom properties</em> (variables). Just override the CSS
-          variables to customize your version of Stuff.</p>
 
-        <pre><code><em>/* <span class="name"></span>Light scheme (Default) */
-/* Can be forced with data-theme="light" */</em>
-<b>[data-theme=<u>"light"</u>]</b>,
-<b>:root:not([data-theme=<u>"dark"</u>])</b> {
-  <i>--primary</i>: <u class="c600">…</u>;
-  <i>--primary-hover</i>: <u class="c700">…</u>;
-  <i>--primary-focus</i>: <u class="c600-outline-light">…</u>;
-  <i>--primary-inverse</i>: <u class="inverse">…</u>;
-}
-
-<em>/* <span class="name"></span>Dark scheme (Auto) */
-/* Automatically enabled if user has Dark mode enabled */</em>
-<i>@media</i> only <b>screen</b> and <b>(prefers-color-scheme: <u>dark</u>)</b> {
-  <b>:root:not([data-theme=<u>"light"</u>])</b> {
-    <i>--primary</i>: <u class="c600">…</u>;
-    <i>--primary-hover</i>: <u class="c500">…</u>;
-    <i>--primary-focus</i>: <u class="c600-outline-dark">…</u>;
-    <i>--primary-inverse</i>: <u class="inverse">…</u>;
-  }
-}
-
-<em>/* <span class="name"></span>Dark scheme (Forced) */
-/* Enabled if forced with data-theme="dark" */</em>
-<b>[data-theme=<u>"dark"</u>]</b> {
-  <i>--primary</i>: <u class="c600">…</u>;
-  <i>--primary-hover</i>: <u class="c500">…</u>;
-  <i>--primary-focus</i>: <u class="c600-outline-dark">…</u>;
-  <i>--primary-inverse</i>: <u class="inverse">…</u>;
-}
-
-<em>/* <span class="name"></span>(Common styles) */</em>
-<b>:root</b> {
-  <i>--form-element-active-border-color</i>: <u>var</u>(<i>--primary</i>);
-  <i>--form-element-focus-color</i>: <u>var</u>(<i>--primary-focus</i>);
-  <i>--switch-color</i>: <u>var</u>(<i>--primary-inverse</i>);
-  <i>--switch-checked-background-color</i>: <u>var</u>(<i>--primary</i>);
-}
-</code></pre>
-
-        <p>You can find all the CSS variables used in the default theme here: <a
-            href="https://github.com/Stuffcss/Stuff/blob/master/css/themes/default.css">css/themes/default.css</a></p>
         <h3>Importing Stuff SASS library</h3>
         <p>We recommend customizing Stuff by importing SASS source files into your project. This way, you can keep Stuff
           up to date without conflicts since Stuff code and your custom code are separated.</p>

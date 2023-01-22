@@ -2,13 +2,6 @@
  * Code
  */
 
-// Reboot based on :
-// - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
-// - sanitize.css v13.0.0 | CC0 1.0 Universal | github.com/csstools/sanitize.css
-// ––––––––––––––––––––
-
-// 1. Correct the inheritance and scaling of font size in all browsers
-// 2. Correct the odd `em` font sizing in all browsers
 pre,
 code,
 kbd,
@@ -26,7 +19,7 @@ pre {
 pre,
 code,
 kbd {
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   background: var(--code-background-color);
   color: var(--code-color);
   font-weight: var(--font-weight);
@@ -46,7 +39,7 @@ pre {
 
   >code {
     display: block;
-    padding: var(--spacing);
+    padding: 5px;
     background: none;
     font-size: 14px;
     line-height: var(--line-height);

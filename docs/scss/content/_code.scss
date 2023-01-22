@@ -17,8 +17,8 @@ article pre code {
 // Horizontally aligned with <article> content
 section>pre {
   margin: var(--block-spacing-vertical) 0;
-  padding: calc(var(--block-spacing-vertical) / 1.5) var(--block-spacing-horizontal);
-  background: var(--article-code-background-color);
+  padding: calc(var(--block-spacing-vertical) / 2.5) var(--block-spacing-horizontal);
+  // background: var(--article-code-background-color);
   box-shadow: var(--card-box-shadow);
 }
 
@@ -56,13 +56,13 @@ section>pre {
 [data-theme="invalid"] {
   &:before {
     background: var(--invalid-color);
-    content: "Not so great";
+    content: "Tidak bagus";
   }
 }
 
 [data-theme="valid"] {
   &:before {
     background: var(--valid-color);
-    content: "Great";
+    content: "Bagus";
   }
 }
