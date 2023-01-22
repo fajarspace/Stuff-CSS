@@ -19,9 +19,9 @@
 
   // Primary colors <a>
   --primary: #fefefe;
-  --primary-hover: #{$primary-500};
+  --primary-hover: #fefefe;
   --primary-focus: #{rgba($primary-600, 0.25)};
-  --primary-inverse: #{$white};
+  --primary-inverse: black;
 
   // Secondary colors
   --secondary: #{$grey-600};
