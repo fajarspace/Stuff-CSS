@@ -28,11 +28,11 @@ section>pre {
 
   button {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    left: 0;
 
     &:hover {
-      background-color: var(--primary);
+      background-color: var(--primary-hover);
       cursor: pointer;
     }
   }
