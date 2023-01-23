@@ -1,6 +1,6 @@
 {
   "name": "stuffcss",
-  "version": "1.0.7--beta",
+  "version": "1.0.7-beta",
   "description": "Minimal CSS Framework for semantic HTML",
   "author": "fajarspace",
   "main": "dist/",
