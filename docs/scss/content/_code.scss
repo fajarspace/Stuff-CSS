@@ -20,7 +20,7 @@ section>pre {
   position: relative;
   margin: var(--block-spacing-vertical) 0;
   // padding: calc(var(--block-spacing-vertical) / 3.5) var(--block-spacing-horizontal);
-  padding: 3.75rem 0 1.75rem 1rem;
+  padding: 2.75rem 0 1.75rem 2rem;
   overflow: auto;
   background: var(--article-code-background-color);
 
@@ -30,10 +30,19 @@ section>pre {
     position: absolute;
     top: 0;
     left: 0;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: var(--primary);
 
     &:hover {
-      background-color: var(--primary-hover);
+      // background-color: var(--primary-hover);
       cursor: pointer;
+
+    }
+
+    &:focus {
+      display: none;
     }
   }
 
