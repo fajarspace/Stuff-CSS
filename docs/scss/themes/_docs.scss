@@ -13,14 +13,14 @@
 // Automatically enabled if user has Dark mode enabled
 @import "docs/dark";
 
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    @include dark;
-  }
+@media only screen and (prefers-color-scheme: light) {
+  // :root:not([data-theme="dark"]) {
+  //   @include dark;
+  // }
 }
 
 // Dark theme (Forced)
 // Enabled if forced with data-theme="dark"
-[data-theme="light"] {
+[data-theme="dark"] {
   @include dark;
 }

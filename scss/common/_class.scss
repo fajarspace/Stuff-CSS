@@ -1,13 +1,10 @@
-// Config
+// Class
 // --------------------
 
 // Enable <header>, <main>, <footer> inside $semantic-root-element as containers
 $enable-semantic-container: true;
 
-// Enable a centered viewport for <header>, <main>, <footer> inside $enable-semantic-container 
-$enable-viewport: false;
-
 // Enable .classes
 $enable-classes: false;
 
-@import "stuff";
+@import "../stuff"

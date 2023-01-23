@@ -2,8 +2,9 @@
  * stuffcss v1.0.5 (https://stuffcss.netlify.app)
  */
 
-// Config
-@import "common/variables";
+// Common
+@import "common/responsive";
+@import "common/variables"; // breakpoints, viewport dll
 
 // Theming
 @import "themes/default";

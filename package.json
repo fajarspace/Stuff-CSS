@@ -68,8 +68,7 @@
     "watch:docs:html": "nodemon --watch docs/src/ --ext html --exec 'npm run build:docs:html'",
     "watch:docs:js": "nodemon --watch docs/js/ --ext js --ignore *.min.js --exec 'npm run build:docs:js'",
     "watch:docs:scss": "nodemon --watch docs/scss/ --ext scss --exec 'npm run build:docs:css'",
-    "watch:stuff": "nodemon --watch scss/ --ext scss --exec 'npm run build:stuff'",
-    "xixixi": "nodemon --watch docs/src/ --ext html --exec 'npm run build:docs:html'"
+    "watch:stuff": "nodemon --watch scss/ --ext scss --exec 'npm run build:stuff'"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",

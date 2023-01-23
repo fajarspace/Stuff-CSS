@@ -3,6 +3,7 @@
  */
 
 // Variables
+@import "../common/responsive"; // breakpoints, 
 @import "../common/variables";
 @import "default/colors";
 
@@ -18,9 +19,9 @@
 @import "default/dark";
 
 @media only screen and (prefers-color-scheme: light) {
-  :root:not([data-theme="light"]) {
-    @include dark;
-  }
+  // :root:not([data-theme="dark"]) {
+  //   @include dark;
+  // }
 }
 
 // Dark theme (Forced)

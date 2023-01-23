@@ -3,11 +3,13 @@
  */
 
 main>aside {
+  border-right: 1px solid var(--nav-border-color);
 
   nav {
     width: 100%;
     padding-top: 13px;
     padding-bottom: var(--block-spacing-vertical);
+
 
     @media (min-width: map-get($breakpoints, "lg")) {
       position: fixed;
@@ -87,7 +89,7 @@ main>aside {
   }
 
   li {
-    border-left: 1px solid var(--primary);
+    border-left: 1px solid var(--nav-border-color);
 
     a {
       --nav-link-spacing-vertical: 0.25rem;
