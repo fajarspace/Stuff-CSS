@@ -7,9 +7,9 @@ import copyButtonLabel from "./src/copy";
 
 // Theme switcher
 themeSwitcher.addButton({
-  tag: 'button',
-  class: 'contrast switcher theme-switcher',
-  target: '.darkmode',
+  tag: 'li',
+  class: 'contrast switcher darkmode',
+  target: 'button',
 });
 themeSwitcher.init();
 
