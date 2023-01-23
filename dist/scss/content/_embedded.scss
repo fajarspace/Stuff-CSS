@@ -1,0 +1,50 @@
+/**
+ * Embedded content
+ */
+
+// Reboot based on :
+// - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+// - sanitize.css v13.0.0 | CC0 1.0 Universal | github.com/csstools/sanitize.css
+// ––––––––––––––––––––
+
+// Change the alignment on media elements in all browsers (opinionated)
+:where(audio, canvas, iframe, img, svg, video) {
+  vertical-align: middle;
+}
+
+// Add the correct display in IE 9-
+audio,
+video {
+  display: inline-block;
+}
+
+// Add the correct display in iOS 4-7
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+// Remove the border on iframes in all browsers (opinionated)
+:where(iframe) {
+  border-style: none;
+}
+
+// 1. Remove the border on images inside links in IE 10.
+// 2. Responsive by default
+img {
+  max-width: 100%; // 2
+  height: auto; // 2
+  border-style: none; // 1
+}
+
+// Change the fill color to match the text color in all browsers (opinionated)
+:where(svg:not([fill])) {
+  fill: currentColor;
+}
+
+// Hide the overflow in IE
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9lbWJlZGRlZC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Il9lbWJlZGRlZC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBFbWJlZGRlZCBjb250ZW50XG4gKi9cblxuLy8gUmVib290IGJhc2VkIG9uIDpcbi8vIC0gbm9ybWFsaXplLmNzcyB2OC4wLjEgfCBNSVQgTGljZW5zZSB8IGdpdGh1Yi5jb20vbmVjb2xhcy9ub3JtYWxpemUuY3NzXG4vLyAtIHNhbml0aXplLmNzcyB2MTMuMC4wIHwgQ0MwIDEuMCBVbml2ZXJzYWwgfCBnaXRodWIuY29tL2Nzc3Rvb2xzL3Nhbml0aXplLmNzc1xuLy8g4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCT4oCTXG5cbi8vIENoYW5nZSB0aGUgYWxpZ25tZW50IG9uIG1lZGlhIGVsZW1lbnRzIGluIGFsbCBicm93c2VycyAob3BpbmlvbmF0ZWQpXG46d2hlcmUoYXVkaW8sIGNhbnZhcywgaWZyYW1lLCBpbWcsIHN2ZywgdmlkZW8pIHtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuLy8gQWRkIHRoZSBjb3JyZWN0IGRpc3BsYXkgaW4gSUUgOS1cbmF1ZGlvLFxudmlkZW8ge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbi8vIEFkZCB0aGUgY29ycmVjdCBkaXNwbGF5IGluIGlPUyA0LTdcbmF1ZGlvOm5vdChbY29udHJvbHNdKSB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGhlaWdodDogMDtcbn1cblxuLy8gUmVtb3ZlIHRoZSBib3JkZXIgb24gaWZyYW1lcyBpbiBhbGwgYnJvd3NlcnMgKG9waW5pb25hdGVkKVxuOndoZXJlKGlmcmFtZSkge1xuICBib3JkZXItc3R5bGU6IG5vbmU7XG59XG5cbi8vIDEuIFJlbW92ZSB0aGUgYm9yZGVyIG9uIGltYWdlcyBpbnNpZGUgbGlua3MgaW4gSUUgMTAuXG4vLyAyLiBSZXNwb25zaXZlIGJ5IGRlZmF1bHRcbmltZyB7XG4gIG1heC13aWR0aDogMTAwJTsgLy8gMlxuICBoZWlnaHQ6IGF1dG87IC8vIDJcbiAgYm9yZGVyLXN0eWxlOiBub25lOyAvLyAxXG59XG5cbi8vIENoYW5nZSB0aGUgZmlsbCBjb2xvciB0byBtYXRjaCB0aGUgdGV4dCBjb2xvciBpbiBhbGwgYnJvd3NlcnMgKG9waW5pb25hdGVkKVxuOndoZXJlKHN2Zzpub3QoW2ZpbGxdKSkge1xuICBmaWxsOiBjdXJyZW50Q29sb3I7XG59XG5cbi8vIEhpZGUgdGhlIG92ZXJmbG93IGluIElFXG5zdmc6bm90KDpyb290KSB7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG4iXX0= */

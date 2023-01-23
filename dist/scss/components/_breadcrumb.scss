@@ -1,0 +1,15 @@
+// Breadcrumb RTL
+[dir="rtl"] {
+  nav {
+    &[aria-label="breadcrumb"] {
+      & ul li {
+        &:not(:last-child) {
+          ::after {
+            content: "\\";
+          }
+        }
+      }
+    }
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9icmVhZGNydW1iLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiX2JyZWFkY3J1bWIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEJyZWFkY3J1bWIgUlRMXG5bZGlyPVwicnRsXCJdIHtcbiAgbmF2IHtcbiAgICAmW2FyaWEtbGFiZWw9XCJicmVhZGNydW1iXCJdIHtcbiAgICAgICYgdWwgbGkge1xuICAgICAgICAmOm5vdCg6bGFzdC1jaGlsZCkge1xuICAgICAgICAgIDo6YWZ0ZXIge1xuICAgICAgICAgICAgY29udGVudDogXCJcXFxcXCI7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59Il19 */

@@ -1,0 +1,14 @@
+// fluid
+// --------------------
+
+// Enable <header>, <main>, <footer> inside $semantic-root-element as containers
+$enable-semantic-container: true;
+
+// Enable a centered viewport for <header>, <main>, <footer> inside $enable-semantic-container 
+$enable-viewport: false;
+
+// Enable .classes
+$enable-classes: false;
+
+@import "../stuff"
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9mbHVpZC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Il9mbHVpZC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gZmx1aWRcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tXG5cbi8vIEVuYWJsZSA8aGVhZGVyPiwgPG1haW4+LCA8Zm9vdGVyPiBpbnNpZGUgJHNlbWFudGljLXJvb3QtZWxlbWVudCBhcyBjb250YWluZXJzXG4kZW5hYmxlLXNlbWFudGljLWNvbnRhaW5lcjogdHJ1ZTtcblxuLy8gRW5hYmxlIGEgY2VudGVyZWQgdmlld3BvcnQgZm9yIDxoZWFkZXI+LCA8bWFpbj4sIDxmb290ZXI+IGluc2lkZSAkZW5hYmxlLXNlbWFudGljLWNvbnRhaW5lciBcbiRlbmFibGUtdmlld3BvcnQ6IGZhbHNlO1xuXG4vLyBFbmFibGUgLmNsYXNzZXNcbiRlbmFibGUtY2xhc3NlczogZmFsc2U7XG5cbkBpbXBvcnQgXCIuLi9zdHVmZlwiIl19 */

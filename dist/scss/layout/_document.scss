@@ -1,0 +1,49 @@
+/**
+ * Document
+ * Content-box & Responsive typography
+ */
+
+// Reboot based on :
+// - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+// - sanitize.css v13.0.0 | CC0 1.0 Universal | github.com/csstools/sanitize.css
+// ––––––––––––––––––––
+
+// 1. Add border box sizing in all browsers (opinionated)
+// 2. Backgrounds do not repeat by default (opinionated)
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+  background-repeat: no-repeat; // 2
+}
+
+// 1. Add text decoration inheritance in all browsers (opinionated)
+// 2. Add vertical alignment inheritance in all browsers (opinionated)
+::before,
+::after {
+  text-decoration: inherit; // 1
+  vertical-align: inherit; // 2
+}
+
+// 1. Use the default cursor in all browsers (opinionated)
+// 2. Change the line height in all browsers (opinionated)
+// 3. Breaks words to prevent overflow in all browsers (opinionated)
+// 4. Use a 4-space tab width in all browsers (opinionated)
+// 5. Remove the grey highlight on links in iOS (opinionated)
+// 6. Prevent adjustments of font size after orientation changes in iOS
+:where(:root) {
+  -webkit-tap-highlight-color: transparent; // 5
+  -webkit-text-size-adjust: 100%; // 6
+  text-size-adjust: 100%; // 6
+  background-color: var(--background-color);
+  color: var(--color);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height); // 2
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word; // 3
+  cursor: default; // 1
+  tab-size: 2; // 4
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9kb2N1bWVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Il9kb2N1bWVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBEb2N1bWVudFxuICogQ29udGVudC1ib3ggJiBSZXNwb25zaXZlIHR5cG9ncmFwaHlcbiAqL1xuXG4vLyBSZWJvb3QgYmFzZWQgb24gOlxuLy8gLSBub3JtYWxpemUuY3NzIHY4LjAuMSB8IE1JVCBMaWNlbnNlIHwgZ2l0aHViLmNvbS9uZWNvbGFzL25vcm1hbGl6ZS5jc3Ncbi8vIC0gc2FuaXRpemUuY3NzIHYxMy4wLjAgfCBDQzAgMS4wIFVuaXZlcnNhbCB8IGdpdGh1Yi5jb20vY3NzdG9vbHMvc2FuaXRpemUuY3NzXG4vLyDigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJPigJNcblxuLy8gMS4gQWRkIGJvcmRlciBib3ggc2l6aW5nIGluIGFsbCBicm93c2VycyAob3BpbmlvbmF0ZWQpXG4vLyAyLiBCYWNrZ3JvdW5kcyBkbyBub3QgcmVwZWF0IGJ5IGRlZmF1bHQgKG9waW5pb25hdGVkKVxuKixcbio6OmJlZm9yZSxcbio6OmFmdGVyIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDsgLy8gMVxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyAvLyAyXG59XG5cbi8vIDEuIEFkZCB0ZXh0IGRlY29yYXRpb24gaW5oZXJpdGFuY2UgaW4gYWxsIGJyb3dzZXJzIChvcGluaW9uYXRlZClcbi8vIDIuIEFkZCB2ZXJ0aWNhbCBhbGlnbm1lbnQgaW5oZXJpdGFuY2UgaW4gYWxsIGJyb3dzZXJzIChvcGluaW9uYXRlZClcbjo6YmVmb3JlLFxuOjphZnRlciB7XG4gIHRleHQtZGVjb3JhdGlvbjogaW5oZXJpdDsgLy8gMVxuICB2ZXJ0aWNhbC1hbGlnbjogaW5oZXJpdDsgLy8gMlxufVxuXG4vLyAxLiBVc2UgdGhlIGRlZmF1bHQgY3Vyc29yIGluIGFsbCBicm93c2VycyAob3BpbmlvbmF0ZWQpXG4vLyAyLiBDaGFuZ2UgdGhlIGxpbmUgaGVpZ2h0IGluIGFsbCBicm93c2VycyAob3BpbmlvbmF0ZWQpXG4vLyAzLiBCcmVha3Mgd29yZHMgdG8gcHJldmVudCBvdmVyZmxvdyBpbiBhbGwgYnJvd3NlcnMgKG9waW5pb25hdGVkKVxuLy8gNC4gVXNlIGEgNC1zcGFjZSB0YWIgd2lkdGggaW4gYWxsIGJyb3dzZXJzIChvcGluaW9uYXRlZClcbi8vIDUuIFJlbW92ZSB0aGUgZ3JleSBoaWdobGlnaHQgb24gbGlua3MgaW4gaU9TIChvcGluaW9uYXRlZClcbi8vIDYuIFByZXZlbnQgYWRqdXN0bWVudHMgb2YgZm9udCBzaXplIGFmdGVyIG9yaWVudGF0aW9uIGNoYW5nZXMgaW4gaU9TXG46d2hlcmUoOnJvb3QpIHtcbiAgLXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOiB0cmFuc3BhcmVudDsgLy8gNVxuICAtd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7IC8vIDZcbiAgdGV4dC1zaXplLWFkanVzdDogMTAwJTsgLy8gNlxuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1iYWNrZ3JvdW5kLWNvbG9yKTtcbiAgY29sb3I6IHZhcigtLWNvbG9yKTtcbiAgZm9udC13ZWlnaHQ6IHZhcigtLWZvbnQtd2VpZ2h0KTtcbiAgZm9udC1zaXplOiB2YXIoLS1mb250LXNpemUpO1xuICBsaW5lLWhlaWdodDogdmFyKC0tbGluZS1oZWlnaHQpOyAvLyAyXG4gIGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseSk7XG4gIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7XG4gIG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7IC8vIDNcbiAgY3Vyc29yOiBkZWZhdWx0OyAvLyAxXG4gIHRhYi1zaXplOiAyOyAvLyA0XG59Il19 */
