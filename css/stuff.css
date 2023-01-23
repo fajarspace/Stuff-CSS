@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * stuffcss v1.0.6 (https://stuffcss.netlify.app)
+ * stuffcss v1.0.7-beta (https://stuffcss.netlify.app)
  */
 .center {
   justify-items: center;
@@ -836,7 +836,7 @@ button {
   text-transform: none;
 }
 
-#themes button.theme-switcher:first-of-type {
+#themes button.darkmode:first-of-type {
   --font-weight: bold;
 }
 

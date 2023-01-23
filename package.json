@@ -66,7 +66,7 @@
     "postbuild:dist:js": "echo '\\033[32m[stuffcss] Dist .js build done\\033[0m'",
     "postbuild:stuff": "echo '\\033[32m[stuffcss] Stuff library build done\\033[0m'",
     "watch:docs:html": "nodemon --watch docs/src/ --ext html --exec 'npm run build:docs:html'",
-    "watch:dist:js": "nodemon --watch docs/js/ --ext js --ignore *.min.js --exec 'npm run build:dist:js'",
+    "watch:dist:js": "nodemon --watch dist/js/ --ext js --ignore *.min.js --exec 'npm run build:dist:js'",
     "watch:docs:scss": "nodemon --watch docs/scss/ --ext scss --exec 'npm run build:docs:css'",
     "watch:stuff": "nodemon --watch scss/ --ext scss --exec 'npm run build:stuff'"
   },

@@ -1,14 +1,14 @@
 
 
-export const themeSwitcher = {
+export const customDarkmode = {
 
   // Config
   _scheme: 'auto',
   change: {
-    light: '<i>🌚 Dark</i>',
-    dark: '<i>Light 🌝</i>',
+    light: '',
+    dark: '',
   },
-  buttonsTarget: '.theme-switcher',
+  buttonsTarget: '.customdarkmode',
   localStorageKey: 'stuffPreferedColorScheme',
 
   // Init
@@ -87,4 +87,4 @@ export const themeSwitcher = {
   },
 };
 
-export default themeSwitcher;
+export default customDarkmode;
