@@ -5,6 +5,10 @@
 main>aside {
   border-right: 1px solid var(--nav-border-color);
 
+  @media (max-width: map-get($breakpoints, "lg")) {
+    border-right: none !important;
+  }
+
   nav {
     width: 100%;
     padding-top: 13px;
@@ -17,6 +21,7 @@ main>aside {
       max-height: calc(100vh - 5.5rem);
       overflow-x: hidden;
       overflow-y: auto;
+
     }
 
     a#toggle-docs-navigation {
