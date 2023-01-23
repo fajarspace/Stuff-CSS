@@ -1,5 +1,0 @@
-// Output color in RGB format
-@function to-rgb($color) {
-  @return unquote("rgb(#{red($color)}, #{green($color)}, #{blue($color)})");
-}
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9mdW5jdGlvbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJfZnVuY3Rpb25zLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBPdXRwdXQgY29sb3IgaW4gUkdCIGZvcm1hdFxuQGZ1bmN0aW9uIHRvLXJnYigkY29sb3IpIHtcbiAgQHJldHVybiB1bnF1b3RlKFwicmdiKCN7cmVkKCRjb2xvcil9LCAje2dyZWVuKCRjb2xvcil9LCAje2JsdWUoJGNvbG9yKX0pXCIpO1xufSJdfQ== */
