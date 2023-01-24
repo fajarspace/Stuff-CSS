@@ -19,7 +19,8 @@ section>pre {
   // box-shadow: var(--card-box-shadow);
   position: relative;
   margin: 2rem 0;
-  margin-bottom: var(--block-spacing-vertical);
+  // margin-bottom: var(--block-spacing-vertical);
+  margin-bottom: 3rem;
   // padding: calc(var(--block-spacing-vertical) / 3.5) var(--block-spacing-horizontal);
   padding: 2.75rem 0 1.75rem 2rem;
   overflow: auto;

@@ -46,7 +46,7 @@
   // Spacings for typography elements
   --typography-spacing-vertical: 1.5rem;
 
-  // Spacings for body > header, body > main, body > footer, section, article
+  // Spacings for body > header, body > main, body > footer, section, .card
   --block-spacing-vertical: calc(var(--spacing) * 2);
   --block-spacing-horizontal: var(--spacing);
 
@@ -108,8 +108,8 @@
     }
   }
 
-  // Card (<article>)
-  article {
+  // Card (<.card>)
+  .card {
     @if map-get($breakpoints, "sm") {
       @media (min-width: map-get($breakpoints, "sm")) {
         --block-spacing-horizontal: calc(var(--spacing) * 1.25);
@@ -136,7 +136,7 @@
   }
 
   // Modal
-  dialog>article {
+  dialog>.card {
 
     --block-spacing-vertical: calc(var(--spacing) * 2);
     --block-spacing-horizontal: var(--spacing);

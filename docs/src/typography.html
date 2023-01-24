@@ -102,102 +102,112 @@
             </tbody>
           </table>
         </figure>
-        <p>Headings:</p>
-        <div class="card" aria-label="Headings examples">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
-          <footer class="code">
-            <pre><code>&lt;<b>h1</b>&gt;Heading 1&lt;/<b>h1</b>&gt;
+
+        <hgroup>
+          <h1>Heading</h1>
+          <h2>
+            Heading.
+          </h2>
+        </hgroup>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <div class="heading">
+          <h2>I'm Heading 2</h2>
+          <h3>Subtitle for heading 2</h3>
+        </div>
+        <pre><code>&lt;<b>h1</b>&gt;Heading 1&lt;/<b>h1</b>&gt;
 &lt;<b>h2</b>&gt;Heading 2&lt;/<b>h2</b>&gt;
 &lt;<b>h3</b>&gt;Heading 3&lt;/<b>h3</b>&gt;
 &lt;<b>h4</b>&gt;Heading 4&lt;/<b>h4</b>&gt;
 &lt;<b>h5</b>&gt;Heading 5&lt;/<b>h5</b>&gt;
-&lt;<b>h6</b>&gt;Heading 6&lt;/<b>h6</b>&gt;</code></pre>
-          </footer>
-        </div>
+&lt;<b>h6</b>&gt;Heading 6&lt;/<b>h6</b>&gt;
+
+&lt;<b>div</b> <i>class</i>=<u>"heading</u>"&gt;
+  &lt;<b>h2</b>&gt;Heading 2&lt;/<b>h2</b>&gt;
+  &lt;<b>h3</b>&gt;Subtitle for heading 2&lt;/<b>h3</b>&gt;
+&lt;/<b>div</b>&gt;
+</code></pre>
+
+
         <p>
           Inside a <code>&lt;<b>hgroup</b>&gt;</code> or a
           <code>&lt;<b>div</b> <i>class</i>=<u>"headings"</u>&gt;</code> all
           <code><i>margin-bottom</i></code> are collapsed and the
           <code>:last-child</code> is muted.
         </p>
-        <div class="card" aria-label="Hgroup example">
-          <div class="headings">
-            <h2>Heading 2</h2>
-            <h3>Subtitle for heading 2</h3>
+
+
+
+        <hgroup>
+          <h1>Inline text</h1>
+          <h2>
+            Inline text.
+          </h2>
+        </hgroup>
+
+        <div class="grid">
+          <div>
+            <p><abbr title="Abbreviation">Abbr.</abbr> <code>abbr</code></p>
+            <p><strong>Bold</strong> <code>strong</code> <code>b</code></p>
+            <p>
+              <em>Italic</em> <code>i</code> <code>em</code>
+              <code>cite</code>
+            </p>
+            <p><del>Deleted</del> <code>del</code></p>
+            <p><ins>Inserted</ins> <code>ins</code></p>
+            <p><kbd>Ctrl + S</kbd> <code>kbd</code></p>
           </div>
-          <footer class="code">
-            <pre><code>&lt;<b>hgroup</b>&gt;
-  &lt;<b>h2</b>&gt;Heading 2&lt;/<b>h2</b>&gt;
-  &lt;<b>h3</b>&gt;Subtitle for heading 2&lt;/<b>h3</b>&gt;
-&lt;/<b>hgroup</b>&gt;</code></pre>
-
-            <pre><code>&lt;<b>div</b> <i>class</i>=<u>"headings</u>"&gt;
-  &lt;<b>h2</b>&gt;Heading 2&lt;/<b>h2</b>&gt;
-  &lt;<b>h3</b>&gt;Subtitle for heading 2&lt;/<b>h3</b>&gt;
-&lt;/<b>div</b>&gt;</code></pre>
-          </footer>
-        </div>
-
-        <p>Inline text elements:</p>
-        <div class="card" aria-label="Inline text examples">
-          <div class="grid">
-            <div>
-              <p><abbr title="Abbreviation">Abbr.</abbr> <code>abbr</code></p>
-              <p><strong>Bold</strong> <code>strong</code> <code>b</code></p>
-              <p>
-                <em>Italic</em> <code>i</code> <code>em</code>
-                <code>cite</code>
-              </p>
-              <p><del>Deleted</del> <code>del</code></p>
-              <p><ins>Inserted</ins> <code>ins</code></p>
-              <p><kbd>Ctrl + S</kbd> <code>kbd</code></p>
-            </div>
-            <div>
-              <p><mark>Highlighted</mark> <code>mark</code></p>
-              <p><s>Strikethrough</s> <code>s</code></p>
-              <p><small>Small </small> <code>small</code></p>
-              <p>Text <sub>Sub</sub> <code>sub</code></p>
-              <p>Text <sup>Sup</sup> <code>sup</code></p>
-              <p><u>Underline</u> <code>u</code></p>
-            </div>
+          <div>
+            <p><mark>Highlighted</mark> <code>mark</code></p>
+            <p><s>Strikethrough</s> <code>s</code></p>
+            <p><small>Small </small> <code>small</code></p>
+            <p>Text <sub>Sub</sub> <code>sub</code></p>
+            <p>Text <sup>Sup</sup> <code>sup</code></p>
+            <p><u>Underline</u> <code>u</code></p>
           </div>
         </div>
-        <p>Links come with <code>.secondary</code> and <code>.contrast</code> styles.</p>
-        <p>ℹ️&nbsp;These classes are not available in the <a href="classless.html">class-less version</a>.</p>
-        <div class="card" aria-label="Links examples">
-          <a href="#" onclick="event.preventDefault()">Primary</a><br />
-          <a href="#" onclick="event.preventDefault()" class="secondary">Secondary</a><br />
-          <a href="#" onclick="event.preventDefault()" class="contrast">Contrast</a><br />
-          <footer class="code">
-            <pre><code>&lt;<b>a</b> <i>href</i>=<u>"#"</u>&gt;Primary&lt;/<b>a</b>&gt;
+        <pre><code>asd</code></pre>
+        <hgroup>
+          <h1>Links</h1>
+          <h2>
+            With <code>.secondary</code> and <code>.contrast</code> styles.
+          </h2>
+        </hgroup>
+
+        <a href="#" onclick="event.preventDefault()">Primary</a><br />
+        <a href="#" onclick="event.preventDefault()" class="secondary">Secondary</a><br />
+        <a href="#" onclick="event.preventDefault()" class="contrast">Contrast</a><br />
+
+        <pre><code>&lt;<b>a</b> <i>href</i>=<u>"#"</u>&gt;Primary&lt;/<b>a</b>&gt;
 &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>class</i>=<u>"secondary"</u>&gt;Secondary&lt;/<b>a</b>&gt;
 &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>class</i>=<u>"contrast"</u>&gt;Contrast&lt;/<b>a</b>&gt;</code></pre>
+
+        <hgroup>
+          <h1>Blockquote</h1>
+          <h2>
+
+          </h2>
+        </hgroup>
+
+        <blockquote>
+          "Minimal maksimal."
+          <footer>
+            <cite>- Ilham</cite>
           </footer>
-        </div>
-        <p>Blockquote:</p>
-        <div class="card" aria-label="Blockquote example">
-          <blockquote>
-            "Maecenas vehicula metus tellus, vitae congue turpis hendrerit
-            non. Nam at dui sit amet ipsum cursus ornare."
-            <footer>
-              <cite>- Phasellus eget lacinia</cite>
-            </footer>
-          </blockquote>
-          <footer class="code">
-            <pre><code>&lt;<b>blockquote</b>&gt;
-  "Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. 
-  Nam at dui sit amet ipsum cursus ornare."
+        </blockquote>
+
+        <pre><code>&lt;<b>blockquote</b>&gt;
+  "Minimal maksimal."
   &lt;<b>footer</b>&gt;
-    &lt;<b>cite</b>&gt;- Phasellus eget lacinia&lt;/<b>cite</b>&gt;
+    &lt;<b>cite</b>&gt;- Ilham&lt;/<b>cite</b>&gt;
   &lt;/<b>footer</b>&gt;
 &lt;/<b>blockquote</b>&gt;</code></pre>
-          </footer>
-        </div>
+
       </section>
 
     </div>
