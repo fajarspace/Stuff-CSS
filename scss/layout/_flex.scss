@@ -20,10 +20,10 @@
   }
 
   .items {
-    padding-right: var(--spacing);
-    padding-left: var(--spacing);
     flex-grow: 0;
     flex-shrink: 0;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
   }
 
   &.flex-center {
