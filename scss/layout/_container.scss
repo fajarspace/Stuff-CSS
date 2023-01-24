@@ -3,8 +3,7 @@
  * Container
  */
 
-  .container,
-  .container-fluid {
+  .container {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -14,16 +13,17 @@
 
   }
 
-  @media only screen and (max-width: 760px) {
+  .container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 
-    .container,
-    .container-fluid {
-      width: 90%;
-    }
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+
   }
 
-  .container,
-  .container-fluid {
+  .container {
     @if map-get($breakpoints, "sm") {
       @media (min-width: map-get($breakpoints, "sm")) {
         max-width: map-get($viewports, "sm");
@@ -35,6 +35,7 @@
     @if map-get($breakpoints, "md") {
       @media (min-width: map-get($breakpoints, "md")) {
         max-width: map-get($viewports, "md");
+
       }
     }
 

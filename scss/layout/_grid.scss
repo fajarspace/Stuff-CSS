@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
 
     @if map-get($breakpoints, "md") {
       @media (min-width: map-get($breakpoints, "md")) {
@@ -23,18 +25,21 @@
   }
 
   .grid-auto {
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
     grid-column-gap: var(--grid-spacing-horizontal);
     grid-row-gap: var(--grid-spacing-vertical);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill);
     margin: 0;
+    // place-items: center stretch;
 
-    // @if map-get($breakpoints, "lg") {
-    //   @media (min-width: map-get($breakpoints, "lg")) {
-    //     grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
-    //   }
-    // }
+    @if map-get($breakpoints, "md") {
+      @media (min-width: map-get($breakpoints, "md")) {
+        grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+      }
+    }
 
     &>* {
       min-width: 0; // HACK for childs in overflow

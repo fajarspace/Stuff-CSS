@@ -17,6 +17,10 @@ nav ul {
   display: flex;
 }
 
+nav>.fixed {
+  position: fixed;
+}
+
 nav {
   justify-content: space-between;
 

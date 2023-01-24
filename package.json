@@ -35,7 +35,7 @@
     "build:dist:js": "npm-run-all js:bundle:dist:stuff js:bundle:dist:stuffcustomization js:babel:dist:stuff js:babel:dist:stuffcustomization js:babel:dist:stuffgrid js:babel:dist:stuffmodal js:minify:dist:stuff js:minify:dist:stuffcustomization js:minify:dist:stuffgrid js:minify:dist:stuffmodal --silent",
     "build:stuff": "npm-run-all css:compile:stuff css:prefix:stuff css:minify:stuff --silent",
     "css:compile:docs": "sass --style expanded --source-map --embed-sources --no-error-css docs/scss/:docs/css/",
-    "css:compile:stuff": "sass --style expanded --source-map --embed-sources --no-error-css scss/:css/",
+    "css:compile:stuff": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
     "css:minify:docs": "cleancss -O1 --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix .min docs/css/*.css !docs/css/*.min.css",
     "css:minify:stuff": "cleancss -O1 --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix .min dist/css/*.css dist/css/*/*.css !dist/css/*.min.css !dist/css/*/*.min.css",
     "css:prefix:docs": "postcss --config docs/css --replace docs/css/*.css !docs/css/*.min.css",
