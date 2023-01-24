@@ -3,6 +3,7 @@ import darkMode from './src/darkmode';
 // import customDarkmode from "./src/custom-darkmode";
 import toggleNavigation from './src/toggle-navigation';
 import copyButtonLabel from "./src/copy";
+// import flex from "./src/flex";
 
 // Theme switcher
 darkMode.addButton({
@@ -20,3 +21,7 @@ toggleNavigation.init();
 
 // Code doc copy
 copyButtonLabel.init();
+
+
+// // Init
+// flex.init();

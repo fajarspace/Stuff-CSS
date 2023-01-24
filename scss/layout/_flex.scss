@@ -1,0 +1,49 @@
+/**
+ * Dist: Flex
+ */
+
+.flex {
+  display: flex;
+  // margin-left: var(--spacing);
+  // margin-right: var(--spacing);
+  padding-right: var(--spacing);
+  padding-left: var(--spacing);
+
+  @if map-get($breakpoints, "md") {
+    @media (max-width: map-get($breakpoints, "md")) {
+      display: block;
+    }
+  }
+
+  &>* {
+    min-width: 0;
+  }
+
+  .items {
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &.flex-center {
+    justify-content: center;
+  }
+
+  &.flex-start {
+    justify-content: flex-start;
+  }
+
+  &.flex-end {
+    justify-content: flex-end;
+  }
+
+  &.flex-space-beetwen {
+    justify-content: space-between;
+  }
+
+  &.flex-space-around {
+    justify-content: space-around;
+  }
+
+}

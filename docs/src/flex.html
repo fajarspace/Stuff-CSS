@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  ${require('./_head.html')
+  title="Flex"
+  description="Flex minimalist."
+  canonical="flex.html"
+  }
+</head>
+
+<body>
+  ${require('./_nav.html')}
+
+  <main class="container" id="docs">
+    ${require('./_sidebar.html') active="flex-link"}
+
+    <div role="document">
+      <section id="grid">
+        <hgroup>
+          <h1>Flex</h1>
+          <h2>Flex minimalist.</h2>
+        </hgroup>
+        <div class="flex">
+          <div class="items">1</div>
+          <div class="items">2</div>
+          <div class="items">3</div>
+          <div class="items">4</div>
+          <div class="items">5</div>
+          <div class="items">6</div>
+        </div>
+
+        <pre><code>&lt;<b>div</b> <i>class</i>=<u>"flex"</u>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;1&lt;/<b>div</b>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;2&lt;/<b>div</b>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;3&lt;/<b>div</b>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;4&lt;/<b>div</b>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;5&lt;/<b>div</b>&gt;
+  &lt;<b>div</b> <i>class</i>=<u>"items"</u>&gt;6&lt;/<b>div</b>&gt;
+&lt;/<b>div</b>&gt;</code></pre>
+        <p>Columns intentionally collapses below large devices <code>(<u>768px</u>)</code></p>
+
+
+      </section>
+
+    </div>
+  </main>
+  ${require('./_footer.html')}
+  <!-- <script src="js/grid.min.js"></script> -->
+</body>
+
+</html>

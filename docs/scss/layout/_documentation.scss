@@ -72,48 +72,48 @@
 }
 
 // Docs: Grid
-// #grid {
-//   --grid-spacing-vertical: 1rem;
+#flex {
+  --grid-spacing-vertical: 1rem;
 
-//   // button {
-//   //   display: block;
-//   //   width: 100%;
-//   //   margin-bottom: var(--spacing);
+  // button {
+  //   display: block;
+  //   width: 100%;
+  //   margin-bottom: var(--spacing);
 
-//   //   @media (min-width: map-get($breakpoints, "sm")) {
-//   //     display: inline-block;
-//   //     width: auto;
-//   //     margin-right: 0.5rem;
-//   //   }
+  //   @media (min-width: map-get($breakpoints, "sm")) {
+  //     display: inline-block;
+  //     width: auto;
+  //     margin-right: 0.5rem;
+  //   }
 
-//   //   svg {
-//   //     stroke: var(--secondary);
-//   //     margin-right: 0.5rem;
-//   //     border: 2px solid currentColor;
-//   //     border-radius: 1rem;
-//   //     background: currentColor;
-//   //   }
-//   // }
+  //   svg {
+  //     stroke: var(--secondary);
+  //     margin-right: 0.5rem;
+  //     border: 2px solid currentColor;
+  //     border-radius: 1rem;
+  //     background: currentColor;
+  //   }
+  // }
 
-//   .grid {
-//     >* {
-//       padding: calc(var(--spacing) / 2) 0;
-//       border-radius: var(--border-radius);
-//       // background: var(--code-background-color);
-//       font-size: 87.5%;
-//       text-align: center;
-//     }
-//   }
+  // .grid {
+  //   >* {
+  //     padding: calc(var(--spacing) / 2) 0;
+  //     border-radius: var(--border-radius);
+  //     // background: var(--code-background-color);
+  //     font-size: 87.5%;
+  //     text-align: center;
+  //   }
+  // }
 
-//   .grid-auto {
-//     >* {
-//       padding: calc(var(--spacing) / 2) 0;
-//       border-radius: var(--border-radius);
-//       // background: var(--code-background-color);
-//       font-size: 87.5%;
-//       text-align: center;
-//     }
-//   }
+  // .grid-auto {
+  //   >* {
+  //     padding: calc(var(--spacing) / 2) 0;
+  //     border-radius: var(--border-radius);
+  //     // background: var(--code-background-color);
+  //     font-size: 87.5%;
+  //     text-align: center;
+  //   }
+}
 
 //   details {
 //     margin-top: calc(var(--typography-spacing-vertical) * 2);
@@ -132,7 +132,7 @@
 }
 
 // Docs: Forms
-#forms div.grid {
+#forms div.flex {
   grid-row-gap: 0;
 }
 

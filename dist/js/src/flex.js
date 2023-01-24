@@ -2,7 +2,7 @@
  * Grid
  */
 
-const grid = {
+export const flex = {
 
   // Config
   buttons: {
@@ -10,20 +10,20 @@ const grid = {
       add: 'Add column',
       remove: 'Remove column',
     },
-    target: '#grid .card',
+    target: '#flex article',
   },
-  grid: {
+  flex: {
     current: 4,
     min: 1,
     max: 12,
-    gridTarget: '#grid .grid',
-    codeTarget: '#grid pre code',
+    flexTarget: '#flex .flex',
+    codeTarget: '#flex pre code',
   },
 
   // Init
   init() {
     this.addButtons();
-    this.generateGrid();
+    this.generateFlex();
   },
 
   // Add buttons
@@ -48,50 +48,48 @@ const grid = {
     document.querySelector(this.buttons.target).before(buttons);
 
     // Add button listener
-    document.querySelector('#grid button.add').addEventListener('click', () => {
+    document.querySelector('#flex button.add').addEventListener('click', () => {
       this.addColumn();
     }, false);
 
     // Remove button listener
-    document.querySelector('#grid button.remove').addEventListener('click', () => {
+    document.querySelector('#flex button.remove').addEventListener('click', () => {
       this.removeColumn();
     }, false);
   },
 
   // Generate grid
-  generateGrid() {
+  generateFlex() {
     // Config
     let htmlInner = '';
-    let codeInner = '&lt;<b>div</b> <i>class</i>=<u>"grid"</u>&gt;\n';
+    let codeInner = '&lt;<b>div</b> <i>class</i>=<u>"flex"</u>&gt;\n';
 
     // Build
-    for (let col = 0; col < this.grid.current; col++) {
+    for (let col = 0; col < this.flex.current; col++) {
       htmlInner += '<div>' + (col + 1) + '</div>';
       codeInner += '  &lt;<b>div</b>&gt;' + (col + 1) + '&lt;/<b>div</b>&gt;\n';
     }
 
     // Display
     codeInner += '&lt;/<b>div</b>&gt;';
-    document.querySelector(this.grid.gridTarget).innerHTML = htmlInner;
-    document.querySelector(this.grid.codeTarget).innerHTML = codeInner;
+    document.querySelector(this.flex.flexTarget).innerHTML = htmlInner;
+    document.querySelector(this.flex.codeTarget).innerHTML = codeInner;
   },
 
   // Add column
   addColumn() {
-    if (this.grid.current < this.grid.max) {
-      this.grid.current++;
+    if (this.flex.current < this.flex.max) {
+      this.flex.current++;
       this.generateGrid();
     }
   },
 
   // Remove column
   removeColumn() {
-    if (this.grid.current > this.grid.min) {
-      this.grid.current--;
-      this.generateGrid();
+    if (this.grid.current > this.flex.min) {
+      this.flex.current--;
+      this.generateFlex();
     }
   },
 };
-
-// Init
-grid.init();
+export default flex;
