@@ -54,7 +54,7 @@
   --button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
   // Form elements
-  --form-element-background-color: #{mix($black, $grey-900, 37.5%)};
+  --form-element-background-color: var(--background-color);
   --form-element-border-color: #{mix($grey-800, $grey-700)};
   --form-element-color: var(--color);
   --form-element-placeholder-color: var(--muted-color);
@@ -124,11 +124,11 @@
   --card-sectionning-background-color: #{mix($black, $grey-900, 12.5%)};
 
   // Dropdown (<details role="list">)
-  --dropdown-background-color: #{$grey-900};
-  --dropdown-border-color: #{mix($grey-900, $grey-800)};
+  --dropdown-background-color: var(--background-color);
+  --dropdown-border-color: #484848;
   --dropdown-box-shadow: var(--card-box-shadow);
   --dropdown-color: var(--color);
-  --dropdown-hover-background-color: #{rgba(mix($grey-900, $grey-800), 0.75)};
+  --dropdown-hover-background-color: #484848;
 
   // Modal (<dialog>)
   --modal-overlay-background-color: #{rgba(mix($grey-900, $grey-800), 0.8)};
