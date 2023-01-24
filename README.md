@@ -4,6 +4,6 @@
 <p align="center">
   Simple & Minimal Semantic UI
   <br>
-  <a href="https://github.com/fajarspace"><strong>Explore Stuff CSS docs »</strong></a>
+  <a href="https://stuffcss.netlify.app/docs"><strong>Explore Stuff CSS docs »</strong></a>
   <br>
   
