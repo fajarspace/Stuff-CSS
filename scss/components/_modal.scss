@@ -43,13 +43,12 @@ dialog {
       }
     }
 
-    > header,
-    > footer {
-      padding: calc(var(--block-spacing-vertical) * 0.5)
-        var(--block-spacing-horizontal);
+    >header,
+    >footer {
+      padding: calc(var(--block-spacing-vertical) * 0.5) var(--block-spacing-horizontal);
     }
 
-    > header {
+    >header {
       .close {
         margin: 0;
         margin-left: var(--spacing);
@@ -57,7 +56,7 @@ dialog {
       }
     }
 
-    > footer {
+    >footer {
       text-align: right;
 
       [role="button"] {
@@ -108,6 +107,27 @@ dialog {
   }
 }
 
+// Modal
+dialog>.card {
+
+  --block-spacing-vertical: calc(var(--spacing) * 2);
+  --block-spacing-horizontal: var(--spacing);
+
+  @if map-get($breakpoints, "sm") {
+    @media (min-width: map-get($breakpoints, "sm")) {
+      --block-spacing-vertical: calc(var(--spacing) * 2.5);
+      --block-spacing-horizontal: calc(var(--spacing) * 1.25);
+    }
+  }
+
+  @if map-get($breakpoints, "md") {
+    @media (min-width: map-get($breakpoints, "md")) {
+      --block-spacing-vertical: calc(var(--spacing) * 3);
+      --block-spacing-horizontal: calc(var(--spacing) * 1.5);
+    }
+  }
+}
+
 // Utilities
 @if $enable-classes {
   .modal-is-open {
@@ -126,8 +146,9 @@ dialog {
   $animation-duration: 0.2s;
 
   :where(.modal-is-opening, .modal-is-closing) {
+
     dialog,
-    dialog > article {
+    dialog>article {
       animation-duration: $animation-duration;
       animation-timing-function: ease-in-out;
       animation-fill-mode: both;
@@ -135,9 +156,9 @@ dialog {
 
     dialog {
       animation-duration: ($animation-duration * 4);
-      animation-name: modal-overlay ;
+      animation-name: modal-overlay;
 
-      > article {
+      >article {
         animation-delay: $animation-duration;
         animation-name: modal;
       }
@@ -145,8 +166,9 @@ dialog {
   }
 
   .modal-is-closing {
+
     dialog,
-    dialog > article {
+    dialog>article {
       animation-delay: 0s;
       animation-direction: reverse;
     }
