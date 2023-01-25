@@ -11,40 +11,37 @@
 
 <body>
   ${require('./_nav.html')}
+  ${require('./_sidebar.html') active="cards-link"}
 
-  <main class="container" id="docs">
-    ${require('./_sidebar.html') active="cards-link"}
+  <div role="document">
+    <section id="cards">
+      <hgroup>
+        <h1>Cards</h1>
+        <h2>A flexible container with graceful spacings across devices and viewports.</h2>
+      </hgroup>
+      <div class="card">
+        I'm a card!
+      </div>
+      <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;I'm a card!&lt;/<b>div</b>&gt;</code></pre>
+      <p>You can use <code>&lt;<b>header</b>&gt;</code> and footer <code>&lt;<b>footer</b>&gt;</code> inside
+        <code>&lt;<b>div</b>&gt;</code>
+      </p>
+      <div class="card" aria-label="Card sectioning example">
+        <header>Header</header>
+        Body
+        <footer>Footer</footer>
+      </div>
 
-    <div role="document">
-      <section id="cards">
-        <hgroup>
-          <h1>Cards</h1>
-          <h2>A flexible container with graceful spacings across devices and viewports.</h2>
-        </hgroup>
-        <div class="card">
-          I'm a card!
-        </div>
-        <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;I'm a card!&lt;/<b>div</b>&gt;</code></pre>
-        <p>You can use <code>&lt;<b>header</b>&gt;</code> and footer <code>&lt;<b>footer</b>&gt;</code> inside
-          <code>&lt;<b>div</b>&gt;</code>
-        </p>
-        <div class="card" aria-label="Card sectioning example">
-          <header>Header</header>
-          Body
-          <footer>Footer</footer>
-        </div>
-
-        <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;
+      <pre><code>&lt;<b>div</b> <i>class</i>=<u>"card"</u>&gt;
   &lt;<b>header</b>&gt;Header&lt;/<b>header</b>&gt;
     Body
   &lt;<b>footer</b>&gt;Footer&lt;/<b>footer</b>&gt;
 &lt;/<b>div</b>&gt;</code></pre>
 
-      </section>
+    </section>
 
 
-    </div>
-  </main>
+  </div>
   ${require('./_footer.html')}
 </body>
 
