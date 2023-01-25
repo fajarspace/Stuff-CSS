@@ -25,7 +25,7 @@
 // 5. Remove the grey highlight on links in iOS (opinionated)
 // 6. Prevent adjustments of font size after orientation changes in iOS
 :where(:root) {
-  -webkit-tap-highlight-color: transparent; // 5
+  // -webkit-tap-highlight-color: transparent; // 5
   -webkit-text-size-adjust: 100%; // 6
   text-size-adjust: 100%; // 6
   background-color: var(--background-color);
@@ -36,6 +36,6 @@
   font-family: var(--font-family);
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word; // 3
-  cursor: default; // 1
+  // cursor: default; // 1
   tab-size: 2; // 4
 }

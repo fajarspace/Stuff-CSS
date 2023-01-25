@@ -21,7 +21,7 @@
   // Primary colors <a>
   --primary: #393939;
   --primary-hover: black;
-  --primary-focus: #fefefe;
+  --primary-focus: #{$grey-50};
   --primary-inverse: #{$white};
 
   // Secondary colors
