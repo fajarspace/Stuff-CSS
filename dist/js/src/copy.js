@@ -1,4 +1,4 @@
-export const copyButtonLabel = "Copy";
+export const copyButtonLabel = "📋";
 
 // use a class selector if available
 let blocks = document.querySelectorAll("pre");
@@ -6,7 +6,7 @@ let blocks = document.querySelectorAll("pre");
 blocks.forEach((block) => {
   // only add button if browser supports Clipboard API
   if (navigator.clipboard) {
-    let button = document.createElement("button");
+    let button = document.createElement("div");
 
     button.innerText = copyButtonLabel;
     block.appendChild(button);

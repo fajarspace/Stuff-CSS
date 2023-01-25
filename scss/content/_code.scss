@@ -1,6 +1,43 @@
 /**
  * Code
  */
+pre {
+  // box-shadow: var(--card-box-shadow);
+  position: relative;
+  margin: 2rem 0;
+  // margin-bottom: var(--block-spacing-vertical);
+  margin-bottom: 3rem;
+  padding: calc(var(--block-spacing-vertical) / 3.5) var(--block-spacing-horizontal);
+  // padding: 2.75rem 0 1.75rem 2rem;
+  overflow: auto;
+  background: var(--article-code-background-color);
+
+  /* make space  */
+
+  div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: var(--primary);
+
+    &:hover {
+      // background-color: var(--primary-hover);
+      cursor: pointer;
+
+    }
+
+    &:focus {
+      display: none;
+    }
+  }
+
+
+
+}
 
 pre,
 code,

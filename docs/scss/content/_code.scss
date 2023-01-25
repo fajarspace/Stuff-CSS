@@ -21,17 +21,18 @@ section>pre {
   margin: 2rem 0;
   // margin-bottom: var(--block-spacing-vertical);
   margin-bottom: 3rem;
-  // padding: calc(var(--block-spacing-vertical) / 3.5) var(--block-spacing-horizontal);
-  padding: 2.75rem 0 1.75rem 2rem;
+  padding: calc(var(--block-spacing-vertical) / 3.5) var(--block-spacing-horizontal);
+  // padding: 2.75rem 0 1.75rem 2rem;
   overflow: auto;
   background: var(--article-code-background-color);
 
   /* make space  */
 
-  button {
+  div {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    margin: 2px;
     text-align: right;
     background-color: transparent;
     border: none;
