@@ -16,7 +16,7 @@
       <li class="darkmode"></li>
     </ul>
   </nav> -->
-  <div class="topbar center">
+  <div style="z-index: 9999999;" class="topbar center">
     <a href="https://github.com/fajarspace/stuff-css">BETA ver.</a>
   </div>
   <main class="container-fluid">
@@ -39,8 +39,93 @@
       <!-- Place this tag where you want the button to render. -->
       <a class="github-button" href="https://github.com/fajarspace/stuff-css/issues" data-icon="octicon-issue-opened"
         data-size="large" data-show-count="true" aria-label="Issue fajarspace/stuff-css on GitHub">Issue</a>
-    </section>
 
+
+    </section>
+    <section>
+      <div class="">
+        <div class="grid">
+          <div class="card">
+            <h2>Install via NPM</h2>
+            <p>Install Stuff source Sass and JavaScript files via npm,</p>
+            <pre><code>&gt;<b> npm install stuffcss</b></code></pre>
+
+          </div>
+          <div class="card">
+            <h2>Include via CDN</h2>
+            <p>When you only need to include Stuff compiled CSS or JS, you can use UNPKG.</p>
+            <pre><code>&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://unpkg.com/stuffcss@latest/dist/css/stuff.min.css"</u>&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="center">
+        <hgroup>
+          <h1 style="font-size: 3em; ">New themes!</h1>
+          <h2>Stuff added dark mode theme</h2>
+
+        </hgroup>
+
+      </div>
+      <div class="grid" style="align-items: center;">
+        <div>
+          <pre><code><em>&lt;!doctype html&gt;</em>
+&lt;<b>html</b> <i>lang</i>=<u>"en"</u>&gt;
+  &lt;<b>head</b>&gt;
+    &lt;<b>meta</b> <i>charset</i>=<u>"utf-8"</u>&gt;
+    &lt;<b>meta</b> <i>name</i>=<u>"viewport"</u> <i>content</i>=<u>"width=device-width, initial-scale=1"</u>&gt;
+    &lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://unpkg.com/stuffcss@latest/dist/css/stuff.min.css"</u>&gt;
+    &lt;<b>title</b>>Hello, world!&lt;/<b>title</b>&gt;
+  &lt;/<b>head</b>&gt;
+  &lt;<b>body</b>&gt;
+    &lt;<b>button</b> <i>class</i>=<u>"darkmode"</u>&gt;&lt;/<b>button</b>&gt;
+    &lt;<b>script</b> <i>src</i>=<u>"https://unpkg.com/stuffcss@latest/dist/js/stuff.min.js"</u>&gt;&lt;/<b>script</b>&gt;
+  &lt;/<b>body</b>&gt;
+&lt;/<b>html</b>&gt;</code></pre>
+        </div>
+        <div>
+          <button class="darkmode"></button>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <section>
+      <div>
+        <div class="grid">
+          <div>
+            <hgroup>
+              <h1 style="font-size: 3em; ">Why Stuff?</h1>
+              <h2>Stuff is a minimalist css framework, Elegant styles for all natives HTML elements </h2>
+
+            </hgroup>
+          </div>
+          <div style="text-align: right;">
+            <hgroup>
+              <p>Contibutors</p>
+              <a href="https://github.com/fajarspace/stuff-css/graphs/contributors">
+                <img src="https://contrib.rocks/image?repo=fajarspace/stuff-css" />
+              </a>
+            </hgroup>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="position: relative; bottom: 0; right: 0; left: 0;">
+      <hr>
+
+      <div class="center">
+        <p>Any issue, request or Idea? <br><a class="contrast" href="https://github.com/fajarspace/stuff-css">Repo
+            here</a> 🚀</p>
+      </div>
+
+
+
+    </footer>
     <!-- </main>
   <main class="container-fluid">
     <h2 class="center">Fas</h2>
@@ -59,27 +144,7 @@
 
   </main> -->
 
-    <hr>
 
-    <footer class="center">
-
-      <div class="p flex flex-center">
-        <div class="items">
-          <p>Any issue, request or Idea? <br><a class="contrast" href="https://github.com/fajarspace/stuff-css">Repo
-              here</a></p>
-        </div>
-
-        <div class="items">
-          <p>Contibutors</p>
-          <a href="https://github.com/fajarspace/stuff-css/graphs/contributors">
-            <img src="https://contrib.rocks/image?repo=fajarspace/stuff-css" />
-          </a>
-        </div>
-
-      </div>
-
-
-    </footer>
   </main>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
