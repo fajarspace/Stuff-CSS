@@ -3,7 +3,7 @@
 // Default: Light theme
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --background-color: #F7F8FF;
+  --background-color: #F7F7F7;
 
   // Texts colors
   --color: #{$grey-700};
