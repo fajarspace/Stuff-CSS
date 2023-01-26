@@ -3,8 +3,9 @@
  */
 
 // Common
-@import "common/responsive";
-@import "common/variables"; // breakpoints, viewport dll
+@import "common/responsive"; // breakpoints, viewport dll
+@import "common/spacing";
+@import "common/variables"; // heading, a, etc
 
 // Theming
 @import "themes/theme";
