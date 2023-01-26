@@ -2,35 +2,26 @@
  * Card (<.card>)
  */
 
+
+
 .card {
   margin: 20px 0px;
   padding: 20px;
   border-radius: var(--border-radius);
   background: var(--card-background-color);
-  // box-shadow: var(--card-box-shadow);
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-  >header,
-  >footer {
-    // margin-right: calc(var(--block-spacing-horizontal) * -1);
-    // margin-left: calc(var(--block-spacing-horizontal) * -1);
-    // padding: calc(var(--block-spacing-vertical) * 0.66) var(--block-spacing-horizontal);
-    // background-color: var(--card-sectionning-background-color);
+  .title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
   }
 
-  >header {
-    // margin-top: calc(var(--block-spacing-vertical) * -1);
-    // margin-bottom: var(--block-spacing-vertical);
-    // border-bottom: var(--border-width) solid var(--primary);
-    // border-top-right-radius: var(--border-radius);
-    // border-top-left-radius: var(--border-radius);
-  }
-
-  >footer {
-    // margin-top: var(--block-spacing-vertical);
-    // margin-bottom: calc(var(--block-spacing-vertical) * -1);
-    // border-top: var(--border-width) solid var(--card-border-color);
-    // border-bottom-right-radius: var(--border-radius);
-    // border-bottom-left-radius: var(--border-radius);
+  img {
+    margin-right: 20px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
   @if map-get($breakpoints, "sm") {

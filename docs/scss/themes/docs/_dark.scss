@@ -2,7 +2,7 @@
 @mixin dark {
   --invalid-color: #{rgba($red-900, 0.5)};
   --valid-color: #{rgba($green-800, 0.5)};
-  --nav-background-color: #393939;
+  --nav-background-color: #2d2d2d;
   --nav-border-color: #{rgba($grey-500, 0.2)};
   --nav-logo-color: #{mix($black, $grey-900)};
   --article-code-background-color: var(--code-background-color);

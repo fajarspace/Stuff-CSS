@@ -3,7 +3,7 @@
 // Default: Light theme
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --background-color: #FEFEFE;
+  --background-color: #F7F8FF;
 
   // Texts colors
   --color: #{$grey-700};
@@ -109,7 +109,7 @@
   $box-shadow-elevation: 1rem;
   $box-shadow-blur-strengh: 6rem;
   $box-shadow-opacity: 0.06;
-  --card-background-color: #{$grey-50};
+  --card-background-color: white;
   --card-border-color: var(--muted-border-color);
   --card-box-shadow: #{($box-shadow-elevation * 0.5 * 0.029)} #{($box-shadow-elevation * 0.029)} #{($box-shadow-blur-strengh * 0.029)} #{rgba($grey-900, ($box-shadow-opacity * 0.283))},
   #{($box-shadow-elevation * 0.5 * 0.067)} #{($box-shadow-elevation * 0.067)} #{($box-shadow-blur-strengh * 0.067)} #{rgba($grey-900, ($box-shadow-opacity * 0.4))},

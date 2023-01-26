@@ -2,7 +2,7 @@
 
 // Default: Dark theme
 @mixin dark {
-  --background-color: #393939;
+  --background-color: #2D2D2D;
 
   // Texts colors
   --color: #{$grey-200};
@@ -15,12 +15,12 @@
 
   // Muted colors
   --muted-color: #{$grey-500};
-  --muted-border-color: #484848;
+  --muted-border-color: #403E40;
 
   // Primary colors <a>
   --primary: #{$grey-50};
   --primary-hover: #fefefe;
-  --primary-focus: #484848;
+  --primary-focus: #403E40;
   --primary-inverse: black;
 
   // Secondary colors
@@ -89,7 +89,7 @@
   --table-row-stripped-background-color: #{rgba($grey-500, 0.05)};
 
   // Code
-  --code-background-color: #484848;
+  --code-background-color: #403E40;
   // --code-background-color: #{mix($black, $grey-900, 12.5%)};
   --code-color: var(--muted-color);
   // --code-color: var(--muted-color);
@@ -111,7 +111,7 @@
   $box-shadow-elevation: 1rem;
   $box-shadow-blur-strengh: 6rem;
   $box-shadow-opacity: 0.06;
-  --card-background-color: #484848;
+  --card-background-color: #403E40;
   ;
   --card-border-color: var(--card-background-color);
   --card-box-shadow: #{($box-shadow-elevation * 0.5 * 0.029)} #{($box-shadow-elevation * 0.029)} #{($box-shadow-blur-strengh * 0.029)} #{rgba($black, ($box-shadow-opacity * 0.283))},
@@ -125,10 +125,10 @@
 
   // Dropdown (<details role="list">)
   --dropdown-background-color: var(--background-color);
-  --dropdown-border-color: #484848;
+  --dropdown-border-color: #403E40;
   --dropdown-box-shadow: var(--card-box-shadow);
   --dropdown-color: var(--color);
-  --dropdown-hover-background-color: #484848;
+  --dropdown-hover-background-color: #403E40;
 
   // Modal (<dialog>)
   --modal-overlay-background-color: #{rgba(mix($grey-900, $grey-800), 0.8)};
