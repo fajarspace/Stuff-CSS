@@ -10,7 +10,7 @@
   border-radius: var(--border-radius);
   background: var(--card-background-color);
   position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-box-shadow);
 
   .title {
     font-size: 1.5rem;
