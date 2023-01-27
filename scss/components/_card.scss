@@ -5,23 +5,23 @@
 
 
 .card {
+  position: relative;
   margin: 20px 0px;
   padding: 20px;
   border-radius: var(--border-radius);
   background: var(--card-background-color);
-  position: relative;
   box-shadow: var(--card-box-shadow);
 
   .title {
-    font-size: 1.5rem;
     // text-decoration: underline;
     padding-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   img {
-    margin-right: 20px;
     max-width: 80px;
     max-height: 80px;
+    margin-right: 20px;
   }
 
   @if map-get($breakpoints, "sm") {

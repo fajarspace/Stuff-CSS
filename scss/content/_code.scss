@@ -19,10 +19,10 @@ pre {
     top: 0;
     right: 0;
     margin: 5px;
-    text-align: right;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
     color: var(--primary);
+    text-align: right;
 
     &:hover {
       // background-color: var(--primary-hover);
