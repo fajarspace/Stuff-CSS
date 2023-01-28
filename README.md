@@ -55,7 +55,7 @@ Stuff CSS is a front-end framework that makes it easy to create responsive but m
 
 ### Prerequisites
 
-There are 3 ways to run Stuff CSS, Using a CDN (Content Delivery Network), Download Stuff CSS, in this way users can freely custom style, Installing via NPM (Node Package Manager)
+There are 3 ways to run Stuff CSS, Using a CDN (Content Delivery Network), Installing via NPM (Node Package Manager) or Install manually
 *Note: version on react.js is under development, maybe users will find a lot of bugs
 
 * NPM
