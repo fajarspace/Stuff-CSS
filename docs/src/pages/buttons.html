@@ -4,7 +4,7 @@
 <head>
   ${require('./_head.html')
   title="Buttons"
-  description="The essential button in pure HTML, without .classes for the default style."
+  description="The essential button."
   canonical="buttons.html"
   }
 </head>
@@ -18,8 +18,9 @@
     <section id="buttons">
       <hgroup>
         <h1>Buttons</h1>
-        <h2>The essential button in pure HTML, without <code>.classes</code> for the default style.</h2>
+        <h2>Buttons are <code><i>width</i>: <u>100%</u>;</code> by default.</h2>
       </hgroup>
+      <h1>Example</h1>
       <div class="card" aria-label="Button example">
         <button aria-label="Button">Button</button>
         <input type="submit">
@@ -30,31 +31,30 @@
 
         </footer>
       </div>
-      <p>Buttons are <code><i>width</i>: <u>100%</u>;</code> by default. Use <code><i>role</i>=<u>"button"</code> on
-        an inline element if you need an inline button.</p>
+      <hgroup>
+        <h1>Button inline</h1>
+        <h2>Use <code><i>role</i>=<u>"button"</code> on
+          an inline element if you need an inline button.</h2>
+      </hgroup>
+
       <div class="card" aria-label="Inline buttons examples">
-        <a href="#" onclick="event.preventDefault()" role="button">Link</a>
-        <a href="#" onclick="event.preventDefault()" role="button">Link</a>
+        <a href="#" role="button">Primary</a>
+        <a href="#" class="secondary" role="button">Secondary</a>
+        <a href="#" class="contrast" role="button">Contrast</a>
         <footer class="code">
 
-          <pre><code>&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u>&gt;Link&lt;/<b>a</b>&gt;
-&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u>&gt;Link&lt;/<b>a</b>&gt;</code></pre>
+          <pre><code>&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u>&gt;Primary&lt;/<b>a</b>&gt;
+&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"secondary"</u>&gt;Secondary&lt;/<b>a</b>&gt;
+&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"contrast"</u>&gt;Contrast&lt;/<b>a</b>&gt;
+</code></pre>
 
         </footer>
       </div>
-      <p>Buttons come with <code>.secondary</code> and <code>.contrast</code> styles.</p>
-      <p>ℹ️&nbsp;These classes are not available in the <a href="classless.html">class-less version</a>.</p>
-      <div class="card" aria-label="Buttons styles examples">
-        <a href="#" onclick="event.preventDefault()" role="button" class="secondary">Secondary</a>
-        <a href="#" onclick="event.preventDefault()" role="button" class="contrast">Contrast</a>
-        <footer class="code">
+      <hgroup>
+        <h1>Button outline</h1>
+        <h2>Buttons come with <code>.outline</code> styles.</h2>
+      </hgroup>
 
-          <pre><code>&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"secondary"</u>&gt;Secondary&lt;/<b>a</b>&gt;
-&lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"contrast"</u>&gt;Contrast&lt;/<b>a</b>&gt;</code></pre>
-
-        </footer>
-      </div>
-      <p>And a classic <code>.outline</code> variant.</p>
       <div class="card" aria-label="Outline style examples">
         <a href="#" onclick="event.preventDefault()" role="button" class="outline">Primary</a>
         <a href="#" onclick="event.preventDefault()" role="button" class="secondary outline">Secondary</a>
@@ -67,11 +67,8 @@
 
         </footer>
       </div>
-    </section>
 
-  </div>
-
-  ${require('./_footer.html')}
+      ${require('./_footer.html')}
 </body>
 
 </html>

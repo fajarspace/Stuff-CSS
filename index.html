@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stuff CSS - Simple CSS framework for native website</title>
   <meta name="description" content="Simple CSS framework for native website">
-  <meta property="og:image" content="static/img/meta-img.jpg">
-  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="/docs/static/img/meta-img.jpg">
+  <link rel="shortcut icon" href="/docs/static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/dist/css/stuff.min.css">
   <!-- <link rel="stylesheet" href="docs/css/stuff.docs.css"> -->
   <!-- oxygen
@@ -17,27 +17,47 @@
 </head>
 
 <body>
-  <!-- <nav class="container-fluid">
+  <style>
+    .nav-home {
+      text-decoration: underline;
+    }
+  </style>
+  <div style="z-index: 99;" class="topbar center">
+    <a target="_blank" href="https://github.com/fajarspace/stuff-css/releases">🎉 What's new
+      v2.0?</a>
+  </div>
+  <br>
+  <nav
+    style="position: fixed; background-color: var(--background-color); z-index: 99; border-bottom:1px solid var(--muted-border-color);"
+    class="container-fluid">
+
+
+
+    <ul>
+      <li><a href="/">Stuff CSS</a></li>
+      <li><a class="nav-home" href="/docs/">Docs</a></li>/
+      <li><a class="nav-home" href="/themes/">Themes</a></li>/
+      <li><a class="nav-home" href="/examples/">Examples</a></li>
+    </ul>
     <ul>
       <li class="darkmode"></li>
     </ul>
-  </nav> -->
-  <div style="z-index: 9999999;" class="topbar center">
-    <a href="https://github.com/fajarspace/stuff-css">BETA ver.</a>
-  </div>
+  </nav>
+  <br>
   <main class="container-fluid">
 
     <section class="center">
       <hgroup>
-        <h1 class="judul" style="font-size: 5em; -webkit-background-clip: text;
+        <h1 class="logostuff judul" style="font-size: 5em; -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">Stuff.</h1>
-        <h2>Simple CSS framework for native website</h2>
+        <h2>make it easy to create responsive but minimalist web pages</h2>
 
       </hgroup>
 
-      <a class="contrast" href="docs/">Documentation</a> /
+
       <a class="contrast" target="_blank" href="https://github.com/fajarspace/stuff-css/releases">Download </a>
-      <sup><mark>latest v1.0.8-alpha</mark></sup> <br>
+      <sup><mark>latest v1.0.8-alpha</mark></sup>
+      <br>
       <br>
       <!-- Place this tag where you want the button to render. -->
       <a class="github-button" href="https://github.com/fajarspace/stuff-css" data-icon="octicon-star" data-size="large"
@@ -70,6 +90,42 @@
       </div>
     </section>
     <section>
+      <hgroup>
+        <h1>Build and extend in real-time with CSS variables</h1>
+        <h2>Stuff is evolving with each release to better utilize CSS variables for global theme styles, individual
+          components, and even utilities</h2>
+      </hgroup>
+      <div class="grid">
+        <div>
+          <h2>Using CSS variables</h2>
+          Use any of our global <a class="contrast" href="/docs/css-variables.html">:root variables</a> to write new
+          styles. CSS
+          variables use the var(--bs-variableName)
+          syntax and can be inherited by children elements.
+          <pre><code>
+  <b>body</b> {
+    color: <u>var</u>(<i>--primary</i>);
+    background-color: <u>var</u>(<i>--background-color</i>);
+  }
+  <i>.heading</i> {
+    font-size: <u>var</u>(<i>--font-size</i>);
+  }</code></pre>
+        </div>
+        <div>
+          <h2>Customizing via CSS variables</h2>
+          Override global, component, or utility class variables to customize Bootstrap just how you like. No need to
+          redeclare each rule, just a new variable value
+          <pre><code>
+<b>:root</b> {
+  --form-element-active-border-color: <u>var</u>(<i>--primary</i>);
+  --form-element-focus-color: <u>var</u>(<i>--primary-focus</i>);
+  --switch-color: <u>var</u>(<i>--primary-inverse</i>);
+  --switch-checked-background-color: <u>var</u>(<i>--primary</i>);
+}</code></pre>
+        </div>
+      </div>
+    </section>
+    <section>
       <div class="center">
         <hgroup>
           <h1 style="font-size: 3em; ">New themes!</h1>
@@ -98,11 +154,8 @@
           <button class="darkmode"></button>
         </div>
       </div>
-
-
-
-
     </section>
+
     <section>
       <div>
         <div class="grid">
@@ -158,7 +211,7 @@
   </main>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script src="dist/js/stuff.min.js"></script>
+  <script src="/dist/js/stuff.min.js"></script>
 </body>
 
 </html>

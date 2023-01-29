@@ -8,6 +8,7 @@ details {
   padding-bottom: var(--spacing);
   border-bottom: var(--border-width) solid var(--accordion-border-color);
 
+
   summary {
     line-height: 1rem;
     list-style-type: none;
@@ -73,8 +74,10 @@ details {
       }
 
       @if $enable-classes {
+
         // .contrast
         &:not(.outline).contrast {
+
           // Marker
           &::after {
             background-image: var(--icon-chevron-button-inverse);
@@ -86,7 +89,7 @@ details {
 
   // Open
   &[open] {
-    > summary {
+    >summary {
       margin-bottom: calc(var(--spacing));
 
       &:not([role]) {

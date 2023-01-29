@@ -18,17 +18,8 @@
     <section id="containers">
       <hgroup>
         <h1>Containers</h1>
-        <h2>
-          <code>.container</code> enable a centered viewport.<br>
-          <!-- <code>.container-fluid</code> enable a <code><u>100%</u></code> layout. -->
-        </h2>
+        <h2>Stuff breakpoints and viewports sizes</h2>
       </hgroup>
-
-      <pre><code>&lt;<b>main</b> <i>class</i>=<u>"container"</u>&gt;
-  &lt;<b>h1</b>&gt;Hello, world!&lt;<b>/h1</b>&gt;  
-&lt;<b>main</b>&gt;
-</code></pre>
-      <p>breakpoints and viewports sizes</p>
       <figure>
         <table role="grid">
           <thead>
@@ -61,14 +52,43 @@
           </tbody>
         </table>
       </figure>
-      <p><code>&lt;<b>header</b>&gt;</code>, <code>&lt;<b>main</b>&gt;</code> and <code>&lt;<b>footer</b>&gt;</code>
-        as direct children of <code>&lt;<b>body</b>&gt;</code> provide a responsive vertical
-        <code><i>padding</i></code>
-      </p>
-      <p><code>&lt;<b>section</b>&gt;</code> provides a responsive <code><i>margin-bottom</i></code> to separate your
-        sections.</p>
+      <h1>Example</h1>
+      <section id="containers">
+        <hgroup>
+          <h1>Container</h1>
+          <h2>
+            <code>.container</code> enable a centered viewport.<br>
+            <!-- <code>.container-fluid</code> enable a <code><u>100%</u></code> layout. -->
+          </h2>
+        </hgroup>
 
-      ${require('./_footer.html')}
+        <pre><code>&lt;<b>main</b> <i>class</i>=<u>"container"</u>&gt;
+  &lt;<b>h1</b>&gt;Hello, world!&lt;<b>/h1</b>&gt;  
+&lt;<b>main</b>&gt;
+</code></pre>
+
+        <section id="containers">
+          <hgroup>
+            <h1>Container Fluid</h1>
+            <h2>
+              <code>.container-fluid</code> enable a <code><u>100%</u></code> layout.
+            </h2>
+          </hgroup>
+
+          <pre><code>&lt;<b>main</b> <i>class</i>=<u>"container-fluid"</u>&gt;
+  &lt;<b>h1</b>&gt;Hello, world!&lt;<b>/h1</b>&gt;  
+&lt;<b>main</b>&gt;
+</code></pre>
+
+          <p><code>&lt;<b>header</b>&gt;</code>, <code>&lt;<b>main</b>&gt;</code> and <code>&lt;<b>footer</b>&gt;</code>
+            as direct children of <code>&lt;<b>body</b>&gt;</code> provide a responsive vertical
+            <code><i>padding</i></code>
+          </p>
+          <p><code>&lt;<b>section</b>&gt;</code> provides a responsive <code><i>margin-bottom</i></code> to separate
+            your
+            sections.</p>
+
+          ${require('./_footer.html')}
 </body>
 
 </html>
