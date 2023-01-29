@@ -1,43 +1,9 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/fajarspace/stuff-css/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-<<<<<<< HEAD
-<p align="center">
-  Simple & Minimal Semantic UI
-  <br>
-  <a href="https://stuffcss.netlify.app/docs"><strong>Explore Stuff CSS docs »</strong></a>
-  <br>
-  
-[![Github release](https://img.shields.io/github/v/release/fajarspace/stuff-css?color=1095c1&logo=github&logoColor=white)](https://github.com/fajarspace/stuff-css/releases/latest)
-[![npm version](https://img.shields.io/npm/v/stuffcss?color=1095c1)](https://www.npmjs.com/package/stuffcss)
-
-
-=======
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/fajarspace/stuff-css">
-    <img src="https://github.com/fajarspace/Stuff-CSS/blob/master/static/img/stuff-transparent.png?raw=true" alt="Logo" width="400">
+    <img src="https://github.com/fajarspace/Stuff-CSS/blob/master/docs/static/img/stuff-transparent.png?raw=true" alt="Logo" width="400">
   </a>
   <!-- <h3 align="center">Stuff CSS</h3> -->
   <p align="center">
@@ -171,4 +137,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
->>>>>>> db47c0ba14169f723deacaa0a2ba21a70f961242
