@@ -69,9 +69,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Tables
 - [ ] Add Forms
 - [ ] Add Components
-    - [ ] Accordion
+    - [x] Accordion
     - [x] Breadcrumb
-    - [ ] Button
+    - [x] Button
     - [x] Cards
     - [x] Navbar
     - [ ] Dropdown
