@@ -4,7 +4,7 @@
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --background-color: #F7F7F7;
-
+  --primary-color: #0077b6;
   // Texts colors
   --color: #{$grey-700};
   --h1-color: #{$grey-900};
