@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fajarspace/stuff-css">
-    <img src="https://github.com/fajarspace/Stuff-CSS/blob/master/docs/static/img/stuff-transparent.png?raw=true" alt="Logo" width="400">
+    <img src="https://github.com/fajarspace/Stuff-CSS/blob/master/src/static/img/stuff-transparent.png?raw=true" alt="Logo" width="400">
   </a>
   <!-- <h3 align="center">Stuff CSS</h3> -->
   <p align="center">
