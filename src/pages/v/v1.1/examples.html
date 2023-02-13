@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examples - Stuff CSS</title>
+  <meta name="description" content="Simple CSS framework for native website">
+  <meta property="og:image" content="/docs/static/img/meta-img.jpg">
+  <link rel="shortcut icon" href="/docs/static/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/dist/css/stuff.min.css">
+  <!-- <link rel="stylesheet" href="docs/css/stuff.docs.css"> -->
+  <!-- oxygen
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+  <style>
+    .nav-home {
+      text-decoration: underline;
+    }
+  </style>
+  <div style="z-index: 99;" class="topbar center">
+    <a target="_blank" href="https://github.com/fajarspace/stuff-css/releases">🎉 What's new
+      v1.0?</a>
+  </div>
+  <br>
+  <nav
+    style="position: fixed; background-color: var(--background-color); z-index: 99; border-bottom:1px solid var(--muted-border-color);"
+    class="container-fluid">
+    <ul>
+      <li><a href="/">Stuff CSS</a></li>
+      <li><a class="nav-home" href="/docs/">Docs</a></li>/
+      <li><a class="nav-home" href="/themes/">Themes</a></li>/
+      <li><a class="nav-home" href="/examples/">Examples</a></li>
+    </ul>
+    <ul>
+      <li class="darkmode"></li>
+    </ul>
+  </nav>
+  <br>
+  <main class="container-fluid">
+
+    <section class="center">
+      <hgroup>
+        <h1 class="logostuff judul" style="font-size: 5em; -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">Examples</h1>
+        <h2>Stuff Example</h2>
+
+      </hgroup>
+
+      <a class="contrast" href="/docs/">Documentation</a> /
+
+      <a class="contrast" target="_blank" href="https://github.com/fajarspace/stuff-css/releases">Download </a>
+      <sup><mark>latest v1.0.8-alpha</mark></sup> <br>
+      <a class="contrast" href="/themes/">Themes</a> /
+      <a class="contrast" href="/examples/">Examples</a>
+      <br>
+      <br>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/fajarspace/stuff-css" data-icon="octicon-star" data-size="large"
+        data-show-count="true" aria-label="Star fajarspace/stuff-css on GitHub">Star</a> &nbsp;
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/fajarspace/stuff-css/issues" data-icon="octicon-issue-opened"
+        data-size="large" data-show-count="true" aria-label="Issue fajarspace/stuff-css on GitHub">Issue</a>
+
+
+    </section>
+    <hr>
+    <section>
+      <div class="grid-auto">
+        <div class="card">
+          <a href="/docs/examples/accordion.html">accordion</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/button.html">button</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/card.html">card</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/container.html">container</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/flex.html">flex</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/grid.html">grid</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/themes.html">themes</a>
+        </div>
+        <div class="card">
+          <a href="/docs/examples/typography.html">typography</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="/dist/js/stuff.min.js"></script>
+</body>
+
+</html>

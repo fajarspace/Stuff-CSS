@@ -1,0 +1,10 @@
+// Class
+// --------------------
+
+// Enable <header>, <main>, <footer> inside $semantic-root-element as containers
+$enable-semantic-container: true;
+
+// Enable .classes
+$enable-classes: false;
+
+@import "../stuff";

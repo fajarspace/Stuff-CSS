@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  ${require('./_head.html')
+  title="Download"
+  description="Install Manually, from a CDN, or NPM."
+  canonical="download.html"
+  }
+</head>
+
+<body>
+  ${require('./_nav.html')}
+
+  ${require('./_sidebar.html') active="download-link"}
+
+  <div role="document">
+    <section id="start">
+      <hgroup>
+        <h1>Download</h1>
+        <h2>Download Stuff to get the compiled CSS and JavaScript.</h2>
+      </hgroup>
+      <a style="text-decoration: underline;" target="_blank"
+        href="https://github.com/fajarspace/Stuff-CSS/releases">Download latest
+        stuff</a> and linked to
+      <code><u>dist/</u></code>
+      </p>
+      <pre><code>&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"dist/css/stuff.min.css"</u>&gt;</code></pre>
+
+
+      <pre><code>&lt;<b>script</b> <i>src</i>=<u>"dist/js/stuff.min.js"</u>&gt;&lt;/<b>script</b>&gt;</code></pre>
+
+
+      <!-- <pre><code><em>&lt;!doctype html&gt;</em>
+&lt;<b>html</b> <i>lang</i>=<u>"en"</u>&gt;
+  &lt;<b>head</b>&gt;
+    &lt;<b>meta</b> <i>charset</i>=<u>"utf-8"</u>&gt;
+    &lt;<b>meta</b> <i>name</i>=<u>"viewport"</u> <i>content</i>=<u>"width=device-width, initial-scale=1"</u>&gt;
+    &lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"css/stuff.min.css"</u>&gt;
+    &lt;<b>title</b>>Hello, world!&lt;/<b>title</b>&gt;
+  &lt;/<b>head</b>&gt;
+  &lt;<b>body</b>&gt;
+    &lt;<b>main</b> <i>class</i>=<u>"container"</u>&gt;
+      &lt;<b>h1</b>&gt;Hello, world!&lt;/<b>h1</b>&gt;
+    &lt;/<b>main</b>&gt;
+  &lt;/<b>body</b>&gt;
+  &lt;<b>script</b> <i>src</i>=<u>"https://cdn.jsdelivr.net/npm/stuffcss@1.0.7-beta/dist/js/stuff.min.js"</u> <i>integrity</i>=<u>"sha256-cn93xNeta0ghDISkWeXqV9V48JhQsaeskMV+4P/P5LA="</u> <i>crossorigin</i>=<u>"anonymous"</u>&gt;&lt;<b>script</b>&gt;
+&lt;/<b>html</b>&gt;</code></pre> -->
+      ${require('./_footer.html')}
+</body>
+
+</html>
