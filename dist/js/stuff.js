@@ -22,5 +22,12 @@ toggleNavigation.init();
 // Code doc copy
 copyButtonLabel.init();
 
+<<<<<<< HEAD
+=======
+const activeLink = document.querySelector(`aside a#${props.active}`);
+const parentAccordion = activeLink.closest('details');
+activeLink.setAttribute('aria-current', 'page');
+parentAccordion.setAttribute('open', 'true');
+>>>>>>> 4fd3b3c96ee87207cef2a834869eff0449671145
 // // Init
 // flex.init();
