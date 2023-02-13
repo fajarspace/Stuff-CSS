@@ -79,7 +79,7 @@ export default function HomePage() {
           </div>
         </section> */}
 
-        <section>
+        {/* <section>
           <div className="center">
             <hgroup>
               <h1 style={{ fontSize: '3em' }}>New themes!</h1>
@@ -96,7 +96,7 @@ export default function HomePage() {
               <button className="darkmode"></button>
             </div>
           </div>
-        </section>
+        </section> */}
         <section>
           <div>
             <div className="grid">
