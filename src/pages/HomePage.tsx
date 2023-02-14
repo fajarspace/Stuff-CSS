@@ -47,6 +47,8 @@ export default function HomePage() {
                 <p>When you only need to include Stuff compiled CSS or JS, you can use UNPKG.</p>
                 <footer className="code">
                   <pre><code>&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://unpkg.com/stuffcss@latest/dist/css/stuff.min.css"</u>&gt;</code></pre>
+                </footer>
+                <footer className="code">
                   <pre><code>&lt;<b>script</b> <i>src</i>=<u>"https://unpkg.com/stuffcss@latest/dist/js/stuff.min.js"</u>&gt;&lt;/<b>script</b>&gt;</code></pre>
                 </footer>
 
