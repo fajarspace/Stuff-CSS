@@ -21,7 +21,7 @@ export default function Navbar() {
               </ul>
             </details>
           </li>
-          <li><Darkmode /></li>
+          <Darkmode />
 
         </ul>
       </nav>

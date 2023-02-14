@@ -1,11 +1,10 @@
-import Navbar from "../components/navbar";
 import Link from "next/link";
 import Hero from "../components/hero"
 
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+
       <br /> <br />
       <main className='container' >
         <section className="" >

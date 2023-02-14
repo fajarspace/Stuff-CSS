@@ -6,7 +6,7 @@ export default function Grid() {
 
       <hgroup>
         <h1>Grid</h1>
-        <h2><code>.grid</code> minimal grid layout.</h2>
+        <h2>minimal grid layout</h2>
       </hgroup>
       <h1>Example</h1>
       <div className="grid">

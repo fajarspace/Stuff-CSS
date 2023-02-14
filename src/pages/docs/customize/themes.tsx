@@ -4,10 +4,14 @@ export default function Themes() {
   return (
     <Layout pageTitle="Themes" >
       <hgroup>
+        <h1>Themes</h1>
+        <h2></h2>
+      </hgroup>
+      <h1>Example</h1>
+      <hgroup>
         <h1>Dark mode</h1>
         <h2>stuff theme Dark mode (Auto) </h2>
       </hgroup>
-      <h1>Example</h1>
       <p>
         We recommend the <code><b>li</b></code> and <code><b>a</b></code> tags for dark mode
       </p>
@@ -17,7 +21,7 @@ export default function Themes() {
         <em>&lt;!--choose one--&gt;</em> <br />
         &lt;<b>li</b> <i>class</i>=<u>"darkmode"</u>&gt;&lt;/<b>li</b>&gt;
         <br />
-        &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>class</i>=<u>"darkmode"</u>&gt;&lt;/<b>a</b>&gt;
+        &lt;<b>a</b> <i>href</i>=<u>"#"</u> <i>role</i>=<u>"button"</u> <i>class</i>=<u>"darkmode"</u>&gt;&lt;/<b>a</b>&gt;
       </code></pre>
       <hgroup>
         <h1>Default theme</h1>

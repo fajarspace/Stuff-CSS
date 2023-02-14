@@ -44,7 +44,7 @@ export default function Containers() {
         <hgroup>
           <h1>Container</h1>
           <h2>
-            <code>.container</code> enable a centered viewport.<br />
+            enable a centered viewport<br />
             {/* <code>.container-fluid</code> enable a <code><u>100%</u></code> layout. */}
           </h2>
         </hgroup>
@@ -53,7 +53,7 @@ export default function Containers() {
           <hgroup>
             <h1>Container Fluid</h1>
             <h2>
-              <code>.container-fluid</code> enable a <code><u>100%</u></code> layout.
+              enable a <code><u>100%</u></code> layout
             </h2>
           </hgroup>
           <pre><code>&lt;<b>main</b> <i>class</i>=<u>"container-fluid"</u>&gt;{"\n"}{"  "}&lt;<b>h1</b>&gt;Hello, world!&lt;<b>/h1</b>&gt;{"  "}{"\n"}&lt;<b>main</b>&gt;{"\n"}</code></pre>
