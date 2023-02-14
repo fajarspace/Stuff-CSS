@@ -11,28 +11,31 @@ export default function Examples() {
         <section>
           <div className="grid-auto">
             <div className="card">
-              <a href="/examples/accordion">accordion</a>
+              <a href="/examples/accordion">Accordion</a>
             </div>
             <div className="card">
-              <a href="/examples/button">button</a>
+              <a href="/examples/button">Button</a>
             </div>
             <div className="card">
-              <a href="/examples/card">card</a>
+              <a href="/examples/card">Card</a>
             </div>
             <div className="card">
-              <a href="/examples/container">container</a>
+              <a href="/examples/container">Container</a>
             </div>
             <div className="card">
-              <a href="/examples/flex">flex</a>
+              <a href="/examples/dropdown">Dropdown</a>
             </div>
             <div className="card">
-              <a href="/examples/grid">grid</a>
+              <a href="/examples/flex">Flex</a>
             </div>
             <div className="card">
-              <a href="/examples/themes">themes</a>
+              <a href="/examples/grid">Grid</a>
             </div>
             <div className="card">
-              <a href="/examples/typography">typography</a>
+              <a href="/examples/themes">Themes</a>
+            </div>
+            <div className="card">
+              <a href="/examples/typography">Typography</a>
             </div>
           </div>
         </section>
