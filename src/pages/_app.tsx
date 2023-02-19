@@ -7,9 +7,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
-        id="asd"
-        src="../components/toogleNav" ></Script>
-      <Script
         id="bootstrap-cdn"
         src="https://unpkg.com/stuffcss@1.1.0/dist/js/stuff.min.js" />
       <Component {...pageProps} />
