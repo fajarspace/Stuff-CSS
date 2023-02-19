@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
-        id="bootstrap-cdn"
+        id="stuff-cdn"
         src="https://unpkg.com/stuffcss@1.1.0/dist/js/stuff.min.js" />
       <Component {...pageProps} />
     </>
