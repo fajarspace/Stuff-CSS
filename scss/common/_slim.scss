@@ -1,0 +1,13 @@
+// slim
+// --------------------
+
+// Enable responsive spacings for <header>, <main>, <footer>, <section>, <article>
+$enable-responsive-spacings: false;
+
+// Enable transitions
+$enable-transitions: false;
+
+// Enable overriding with !important
+$enable-important: false;
+
+@import "../stuff";
