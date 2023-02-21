@@ -6,7 +6,7 @@ export default function HomePage() {
     <>
 
       <br /> <br />
-      <main className='container' >
+      <main className='container-fluid' >
         <section className="" >
           <div className="grid item-center" >
             <div className="">
