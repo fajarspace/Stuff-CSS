@@ -36,7 +36,7 @@ There are 3 ways to run Stuff CSS, Using a CDN (Content Delivery Network), Insta
 
 * NPM
   ```sh
-  npm install stuffcss -g
+  npm install stuffcss
   ```
 * CDN
   ```html
