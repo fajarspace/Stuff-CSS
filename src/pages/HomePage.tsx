@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="grid item-center" >
             <div className="">
               <Hero />
-              <a role='button' className="bg-primary text-white" rel={"noreferrer"} href="docs/">Get started </a>
+              <a role='button' className="" rel={"noreferrer"} href="docs/">Get started </a>
 
               {/* <Link rel={"noopener"} className="github-button" href="https://github.com/fajarspace/stuff-css" data-icon="octicon-star" data-size="large"
                 data-show-count="true" aria-label="Star fajarspace/stuff-css on GitHub">Star</Link> &nbsp;

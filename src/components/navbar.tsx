@@ -4,9 +4,9 @@ import Darkmode from "./darkmode";
 export default function Navbar() {
   return (
     <>
-      <nav style={{ zIndex: 99, borderBottom: '1px solid var(--muted-border-color)' }} className="container-fluid fixed bg-primary">
+      <nav style={{ backgroundColor: 'var(--background-color)', zIndex: 99, borderBottom: '1px solid var(--muted-border-color)' }} className="container-fluid fixed">
         <ul>
-          <li><strong><a className="text-white" href="/">Stuff CSS</a></strong></li>
+          <li><strong><a className="" href="/">Stuff CSS</a></strong></li>
         </ul>
         <ul>
           {/* <li>
@@ -17,9 +17,9 @@ export default function Navbar() {
               </ul>
             </details>
           </li> */}
-          <li><a className="text-white" href="/docs/">Docs</a></li>
+          <li><a className="" href="/docs/">Docs</a></li>
           {/* <li><a href="/themes/">Themes</a></li> */}
-          <li><a className="text-white" href="/examples/">Examples</a></li>
+          <li><a className="" href="/examples/">Examples</a></li>
           <Darkmode />
 
         </ul>
