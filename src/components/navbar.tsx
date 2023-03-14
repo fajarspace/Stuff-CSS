@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav style={{ backgroundColor: 'var(--background-color)', zIndex: 99, borderBottom: '1px solid var(--muted-border-color)' }} className="container-fluid fixed">
         <ul>
           <li><a href="/">Stuff CSS</a></li>
-          {/* <li><a href="/docs/">Docs</a></li>/ */}
+          <li><a href="/docs/">Docs</a></li>
           {/* <li><a href="/themes/">Themes</a></li> */}
           <li><a href="/examples/">Examples</a></li>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Hero from "../components/hero"
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -20,8 +21,16 @@ export default function HomePage() {
                 data-size="large" data-show-count="true" aria-label="Issue fajarspace/stuff-css on GitHub">Issue</Link> */}
             </div>
             <div>
-              <pre><code><em>&lt;!doctype html&gt;</em>{"\n"}&lt;<b>html</b> <i>lang</i>=<u>"en"</u>&gt;{"\n"}{"  "}&lt;<b>head</b>&gt;{"\n"}{"    "}&lt;<b>meta</b> <i>charset</i>=<u>"utf-8"</u>&gt;{"\n"}{"    "}&lt;<b>meta</b> <i>name</i>=<u>"viewport"</u> <i>content</i>=<u>"width=device-width, initial-scale=1"</u>&gt;{"\n"}{"    "}&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://unpkg.com/stuffcss@latest/dist/css/stuff.min.css"</u>&gt;{"\n"}{"    "}&lt;<b>title</b>&gt;Hello, world!&lt;/<b>title</b>&gt;{"\n"}{"  "}&lt;/<b>head</b>&gt;{"\n"}{"  "}&lt;<b>body</b>&gt;{"\n"}{"    "}&lt;<b>h1</b>&gt;Hello, world!&lt;/<b>h1</b>&gt;{"\n"}{"    "}&lt;<b>script</b> <i>src</i>=<u>"https://unpkg.com/stuffcss@latest/dist/js/stuff.min.js"</u>&gt;&lt;/<b>script</b>&gt;{"\n"}{"  "}&lt;/<b>body</b>&gt;{"\n"}&lt;/<b>html</b>&gt;</code></pre>
+              <Image
+                src="/p.png"
+                alt="Picture of the author"
+                width={500}
+                height={500}
+              />
             </div>
+            {/* <div>
+              <pre><code><em>&lt;!doctype html&gt;</em>{"\n"}&lt;<b>html</b> <i>lang</i>=<u>"en"</u>&gt;{"\n"}{"  "}&lt;<b>head</b>&gt;{"\n"}{"    "}&lt;<b>meta</b> <i>charset</i>=<u>"utf-8"</u>&gt;{"\n"}{"    "}&lt;<b>meta</b> <i>name</i>=<u>"viewport"</u> <i>content</i>=<u>"width=device-width, initial-scale=1"</u>&gt;{"\n"}{"    "}&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://unpkg.com/stuffcss@latest/dist/css/stuff.min.css"</u>&gt;{"\n"}{"    "}&lt;<b>title</b>&gt;Hello, world!&lt;/<b>title</b>&gt;{"\n"}{"  "}&lt;/<b>head</b>&gt;{"\n"}{"  "}&lt;<b>body</b>&gt;{"\n"}{"    "}&lt;<b>h1</b>&gt;Hello, world!&lt;/<b>h1</b>&gt;{"\n"}{"    "}&lt;<b>script</b> <i>src</i>=<u>"https://unpkg.com/stuffcss@latest/dist/js/stuff.min.js"</u>&gt;&lt;/<b>script</b>&gt;{"\n"}{"  "}&lt;/<b>body</b>&gt;{"\n"}&lt;/<b>html</b>&gt;</code></pre>
+            </div> */}
 
           </div>
 

@@ -63,7 +63,7 @@ export default function Sidebar() {
               <li><a href="/docs/components/cards" id="cards-link" className="secondary">Cards</a></li>
               {/* <li><a href="./dropdowns" id="dropdowns-link" class="secondary">Dropdowns</a></li> */}
               {/* <li><a href="./modal" id="modal-link" class="secondary">Modal</a></li> */}
-              <li><a href="./navbar" id="navbar-link" className="secondary">Navbar</a></li>
+              <li><a href="/docs/components/navbar" id="navbar-link" className="secondary">Navbar</a></li>
               {/* <li><a href="./progress" id="progress-link" class="secondary">Progress</a></li> */}
             </ul>
           </details>
