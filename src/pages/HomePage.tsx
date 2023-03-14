@@ -2,6 +2,8 @@ import Link from "next/link";
 import Hero from "../components/hero"
 import Image from 'next/image'
 
+import ImgHeader from '../static/img/2.svg'
+
 export default function HomePage() {
   return (
     <>
@@ -21,9 +23,10 @@ export default function HomePage() {
                 data-size="large" data-show-count="true" aria-label="Issue fajarspace/stuff-css on GitHub">Issue</Link> */}
             </div>
             <div>
+              <br />
               <Image
-                src="/p.png"
-                alt="Picture of the author"
+                src={ImgHeader}
+                alt='user profile picture'
                 width={500}
                 height={500}
               />
