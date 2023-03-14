@@ -1,12 +1,17 @@
 import TypeIt from "typeit-react";
+import Image from 'next/image'
 
+import Logo from '../static/img/stuff-transparent.png'
 
 export default function Hero() {
   return (
     <>
-      <h1 className="judul">
-        Stuff CSS
-      </h1>
+      <Image
+        src={Logo}
+        alt='user profile picture'
+        width={300}
+        height={300}
+      />
       <h2 className="subjudul" >
         <TypeIt
           options={{

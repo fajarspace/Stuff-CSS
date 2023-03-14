@@ -8,8 +8,8 @@ li[role="list"] {
   position: relative;
 }
 
-details[role="list"] summary + ul,
-li[role="list"] > ul {
+details[role="list"] summary+ul,
+li[role="list"]>ul {
   display: flex;
   z-index: 99;
   position: absolute;
@@ -31,8 +31,7 @@ li[role="list"] > ul {
   li {
     width: 100%;
     margin-bottom: 0;
-    padding: calc(var(--form-element-spacing-vertical) * 0.5)
-      var(--form-element-spacing-horizontal);
+    padding: calc(var(--form-element-spacing-vertical) * 0.5) var(--form-element-spacing-horizontal);
     list-style: none;
 
     &:first-of-type {
@@ -45,10 +44,8 @@ li[role="list"] > ul {
 
     a {
       display: block;
-      margin: calc(var(--form-element-spacing-vertical) * -0.5)
-        calc(var(--form-element-spacing-horizontal) * -1);
-      padding: calc(var(--form-element-spacing-vertical) * 0.5)
-        var(--form-element-spacing-horizontal);
+      margin: calc(var(--form-element-spacing-vertical) * -0.5) calc(var(--form-element-spacing-horizontal) * -1);
+      padding: calc(var(--form-element-spacing-vertical) * 0.5) var(--form-element-spacing-horizontal);
       overflow: hidden;
       color: var(--dropdown-color);
       text-decoration: none;
@@ -63,7 +60,7 @@ li[role="list"] > ul {
 
 // Marker
 details[role="list"] summary,
-li[role="list"] > a {
+li[role="list"]>a {
   &::after {
     display: block;
     width: 1rem;
@@ -88,12 +85,8 @@ details[role="list"] {
     margin-bottom: 0;
 
     &:not([role]) {
-      height: calc(
-        1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 +
-          var(--border-width) * 2
-      );
-      padding: var(--form-element-spacing-vertical)
-        var(--form-element-spacing-horizontal);
+      height: calc(1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 + var(--border-width) * 2);
+      padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
       border: var(--border-width) solid var(--form-element-border-color);
       border-radius: var(--border-radius);
       background-color: var(--form-element-background-color);
@@ -146,8 +139,8 @@ nav li[role="list"] a {
   direction: ltr;
 }
 
-nav details[role="list"] summary + ul,
-nav li[role="list"] > ul {
+nav details[role="list"] summary+ul,
+nav li[role="list"]>ul {
   min-width: fit-content;
   border-radius: var(--border-radius);
 
@@ -158,6 +151,7 @@ nav li[role="list"] > ul {
 
 // Dropdowns inside <nav> as nested <details>
 nav details[role="list"] {
+
   summary,
   summary:not([role]) {
     height: auto;
@@ -168,7 +162,7 @@ nav details[role="list"] {
     border-radius: var(--border-radius);
   }
 
-  summary + ul {
+  summary+ul {
     margin-top: var(--outline-width);
     margin-inline-start: 0;
   }
@@ -177,7 +171,7 @@ nav details[role="list"] {
     margin-bottom: calc(var(--nav-link-spacing-vertical) * -1);
     line-height: var(--line-height);
 
-    + ul {
+    +ul {
       margin-top: calc(var(--nav-link-spacing-vertical) + var(--outline-width));
       margin-inline-start: calc(var(--nav-link-spacing-horizontal) * -1);
     }
@@ -186,23 +180,22 @@ nav details[role="list"] {
 
 // Dropdowns inside a <nav> without using <details>
 li[role="list"] {
+
   // Open on hover (for mobile)
   // or on active/focus (for keyboard navigation)
-  &:hover > ul,
-  a:active ~ ul,
-  a:focus ~ ul {
+  &:hover>ul,
+  a:active~ul,
+  a:focus~ul {
     display: flex;
   }
 
-  > ul {
+  >ul {
     display: none;
     margin-top: calc(var(--nav-link-spacing-vertical) + var(--outline-width));
-    margin-inline-start: calc(
-      var(--nav-element-spacing-horizontal) - var(--nav-link-spacing-horizontal)
-    );
+    margin-inline-start: calc(var(--nav-element-spacing-horizontal) - var(--nav-link-spacing-horizontal));
   }
 
-  > a::after {
+  >a::after {
     background-image: var(--icon-chevron);
   }
 }

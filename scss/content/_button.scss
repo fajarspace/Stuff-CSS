@@ -46,7 +46,7 @@ input[type="reset"],
   --border-color: var(--primary);
   --color: var(--primary-inverse);
   --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
-  padding: 0.2rem var(--form-element-spacing-horizontal);
+  padding: 0.5rem var(--form-element-spacing-horizontal);
   border: var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
   outline: none;

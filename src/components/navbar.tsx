@@ -4,23 +4,22 @@ import Darkmode from "./darkmode";
 export default function Navbar() {
   return (
     <>
-      <nav style={{ backgroundColor: 'var(--background-color)', zIndex: 99, borderBottom: '1px solid var(--muted-border-color)' }} className="container-fluid fixed">
+      <nav style={{ zIndex: 99, borderBottom: '1px solid var(--muted-border-color)' }} className="container-fluid fixed bg-primary">
         <ul>
-          <li><a href="/">Stuff CSS</a></li>
-          <li><a href="/docs/">Docs</a></li>
-          {/* <li><a href="/themes/">Themes</a></li> */}
-          <li><a href="/examples/">Examples</a></li>
-
+          <li><strong><a className="text-white" href="/">Stuff CSS</a></strong></li>
         </ul>
         <ul>
-          <li>
+          {/* <li>
             <details role="list">
               <summary aria-haspopup="listbox" >v1.1</summary>
               <ul role="listbox">
                 <li><a href="/" >v1.1</a></li>
               </ul>
             </details>
-          </li>
+          </li> */}
+          <li><a className="text-white" href="/docs/">Docs</a></li>
+          {/* <li><a href="/themes/">Themes</a></li> */}
+          <li><a className="text-white" href="/examples/">Examples</a></li>
           <Darkmode />
 
         </ul>
